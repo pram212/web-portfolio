@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .bg-day {
+        @apply bg-no-repeat bg-fixed bg-center bg-cover;
+        background-image: url('bg.jpg')
+    }
+    .bg-night {
+        @apply bg-no-repeat bg-fixed bg-center bg-cover;
+        background-image: url('bg-dark.jpg')
+    }
+
+    .btn-primary {
+        @apply border-none bg-white dark:bg-neutral-600 text-black dark:text-white hover:bg-gradient-to-r from-[#FA5252] to-[#DD2476] font-medium;
+    }
+
+    .text-title {
+        @apply text-black dark:text-white
+    }
+
+    .font-brand {
+        font-family: "Mochiy Pop One", sans-serif;
+        @apply md:text-3xl text-2xl my-auto font-medium text-red-500
+    }
+
+    .font-title  {
+        @apply text-black dark:text-white text-2xl font-medium mb-4
+    }
+}
+  
