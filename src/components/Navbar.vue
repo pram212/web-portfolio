@@ -5,7 +5,7 @@ import Link from './Link.vue';
 <template>
     <nav class="hidden lg:block mx-auto pt-6 py-2 bg-none">
         <div class="flex justify-between w-full">
-            <h1 class="font-brand">Pramono</h1>
+            <h1 class="font-brand animate-fade-right">Pramono</h1>
             <ul class="menu menu-vertical lg:menu-horizontal rounded-box space-x-5">
                 <li>
                     <Link to="/">

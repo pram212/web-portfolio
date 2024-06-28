@@ -5,22 +5,22 @@ import Linkedin from '../components/Linkedin.vue'
 </script>
 
 <template>
-    <div class="mx-auto text-center">
+    <div class="mx-auto text-center animate-fade-down">
         <div class="avatar shadow-2xl rounded-full">
-            <div class="rounded-full w-[200px] h-[200px] 2xl:w-[200px] 2xl:h-[200px]">
+            <div class="rounded-full w-[250px] h-[250px] 2xl:w-[250px] 2xl:h-[250px]">
                 <img src="/foto.jpg" />
             </div>
         </div>
         <h3 class="mt-2 mb-1 text-5xl font-semibold text-gray-900 dark:text-white capitalize">pramono</h3>
         <p class="mb-4 text-gray-600 dark:text-gray-500 font-medium text-lg">Web Developer</p>
         <div class="flex justify-center space-x-5 mb-7">
-            <a href="" class="bg-base-100 p-[10px] rounded-md hover:btn-primary">
+            <a href="" class="bg-transparent dark:bg-neutral-800 p-[10px] rounded-md hover:btn-primary">
                 <FaceBook />
             </a>
-            <a href="" class="bg-base-100 p-[10px] rounded-md hover:btn-primary">
+            <a href="https://github.com/pram212" target="_blank" class="bg-transparent dark:bg-neutral-800 p-[10px] rounded-md hover:btn-primary">
                 <Github />
             </a>
-            <a href="" class="bg-base-100 p-[10px] rounded-md hover:btn-primary">
+            <a href="https://www.linkedin.com/in/pramono-82a0721b9/" target="_blank" class="bg-transparent dark:bg-neutral-800 p-[10px] rounded-md hover:btn-primary">
                 <Linkedin />
             </a>
         </div>

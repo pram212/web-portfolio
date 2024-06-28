@@ -9,13 +9,11 @@ import ContentCard from "../components/ContentCard.vue"
 
 <template>
     <ContentCard title="About Me">
-        
-
         <section class="flex space-x-8 mb-7">
-            <div class="min-h-fit">
-                <img src="/foto.jpg" class="rounded-[35px] border-none shadow-lg" />
+            <div class="min-h-fit flex-1">
+                <img src="/foto-2.jpg" class="rounded-[35px] border-none shadow-lg" />
             </div>
-            <div class="content">
+            <div class="content w-[60%]">
                 <section class="mb-4">
                     <h1 class="font-title">Who am i?</h1>
                     <p class="text-gray-500 dark:text-gray-400 leading-7 font-poppins">
