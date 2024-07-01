@@ -7,28 +7,46 @@ import ProgressBar from "../components/Progress.vue"
 
 const educations = [
     {
-        start: '2014', end: '2017', title: 'Accosiate Degree', institution: 'Stebank Islam Mr. Sjafruddin Prawiranegara, Jakarta, Indonesia'
+        start: '2014', 
+        end: '2017', 
+        title: 'Accosiate Degree', 
+        institution: 'Stebank Islam Mr. Sjafruddin Prawiranegara, Jakarta, Indonesia'
     },
     {
-        start: '2010', end: '2012', title: 'Senior High School', institution: 'SMAN 1 Cililin, Bandung, Indonesia'
+        start: '2010', 
+        end: '2012', 
+        title: 'Senior High School', 
+        institution: 'SMAN 1 Cililin, Bandung, Indonesia'
     },
 ]
 
 const experiences = [
     {
-        start: '2023', end: 'Present', title: 'Fullstack Developer', institution: 'PT Melkhior Teknologi'
+        start: '2023', 
+        end: 'Present', 
+        title: 'Fullstack Developer', 
+        institution: 'PT Melkhior Teknologi'
     },
     {
-        start: '2022', end: '2023', title: 'Software Engineer', institution: 'PT Mandala Dwipantara Proteksi'
+        start: '2022', 
+        end: '2023', 
+        title: 'Software Engineer', 
+        institution: 'PT Mandala Dwipantara Proteksi'
     },
 ]
 
 const courses = [
     {
-        start: 'April 2021', end: 'Mei 2021', title: 'Laravel Web Development Course', institution: 'Sanbercode'
+        start: 'April 2021', 
+        end: 'Mei 2021', 
+        title: 'Laravel Web Development Course', 
+        institution: 'Sanbercode'
     },
     {
-        start: '2022', end: '2023', title: 'Laravel x Vue js Course', institution: 'Eduwork'
+        start: '2022', 
+        end: '2023', 
+        title: 'Laravel x Vue js Course', 
+        institution: 'Eduwork'
     },
 ]
 
@@ -37,7 +55,7 @@ const skills = [
     { tech: 'Tailwind CSS', value: 70 },
     { tech: 'Vue.js', value: 70 },
     { tech: 'PHP', value: 80 },
-    { tech: 'Mysql', value:80 },
+    { tech: 'Mysql', value: 80 },
     { tech: 'Javascript', value: 80 },
     { tech: 'HTML', value: 90 },
     { tech: 'CSS', value: 80 },
@@ -47,6 +65,7 @@ const skills = [
     { tech: 'Express.js', value: 60 },
 ]
 
+const knowledges = ['programming', 'accounting', 'database', 'front end', 'banking',]
 
 </script>
 
@@ -77,6 +96,10 @@ const skills = [
             </div>
             <div>
                 <h1 class="text-2xl font-medium mb-4 text-title">Knowledge</h1>
+                <div>
+                    <button type="button" class="btn btn-primary btn-sm mr-2 mb-2 capitalize"
+                        v-for="(item, index) in knowledges" :key="index">{{ item }}</button>
+                </div>
             </div>
         </section>
     </ContentCard>

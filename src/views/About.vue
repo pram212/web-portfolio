@@ -4,6 +4,16 @@ import LocationInfo from "../components/AboutComponents/LocationInfo.vue"
 import PhoneInfo from "../components/AboutComponents/PhoneInfo.vue"
 import EmailInfo from "../components/AboutComponents/EmailInfo.vue"
 import ContentCard from "../components/ContentCard.vue"
+import { Carousel, Pagination, Slide } from 'vue3-carousel';
+import 'vue3-carousel/dist/carousel.css';
+
+const clientImages = [
+    "/clients/al-amin.png", 
+    "/clients/cimb-niaga.png", 
+    "/clients/logo.png", 
+    "/clients/stay-beauty.png", 
+    "/clients/dcodes.png",
+]
 
 </script>
 
@@ -26,13 +36,23 @@ import ContentCard from "../components/ContentCard.vue"
                 <section class="mb-4">
                     <h1 class="font-title">Personal Info</h1>
                     <div class="grid grid-cols-2 gap-3">
-                        <PhoneInfo/>
-                        <LocationInfo/>
-                        <EmailInfo/>
-                        <BirthdayInfo/>
+                        <PhoneInfo />
+                        <LocationInfo />
+                        <EmailInfo />
+                        <BirthdayInfo />
                     </div>
                 </section>
             </div>
+        </section>
+        <section class="">
+            <h1 class="font-title text-center my-10">Clients</h1>
+            <Carousel :autoplay="2000" :items-to-show="3" :wrap-around="true" class="mb-10">
+                <Slide v-for="(item, index) in clientImages" :key="index">
+                    <div class="carousel__item">
+                        <img :src="item" alt="">
+                    </div>
+                </Slide>
+            </Carousel>
         </section>
     </ContentCard>
 </template>

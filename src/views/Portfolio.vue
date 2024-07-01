@@ -48,7 +48,6 @@ const detail = ref(Object)
 
 const getDetail = (index) => {
     detail.value = portfolio[index]
-    console.log(detail.value);
 }
 </script>
 
@@ -61,8 +60,8 @@ const getDetail = (index) => {
                     <img :src="item.image" alt="Shoes" />
                 </figure>
                 <div class="card-body bg-none">
-                    <p>{{ item.type }}</p>
-                    <h2 class="card-title font-title">{{ item.name }}</h2>
+                    <p class="text-muted font-semibold">{{ item.type }}</p>
+                    <h2 class="card-title text-title">{{ item.name }}</h2>
                     <div class="card-actions justify-end">
                         <label class="btn btn-sm btn-primary" for="my_modal_3" @click="getDetail(index)" >Learn More</label>
                     </div>
@@ -73,8 +72,8 @@ const getDetail = (index) => {
 
     <!-- detail portfolio modal -->
     <input type="checkbox" id="my_modal_3" class="modal-toggle" />
-    <dialog id="my_modal_3" class="modal modal-bottom">
-        <div class="modal-box bg-white dark:bg-neutral-800 m-0 rounded-none lg:px-24 ">
+    <dialog id="my_modal_3" class="modal modal-bottom bg-white bg-opacity-30">
+        <div class="modal-box bg-gradient-to-b from-purple-200 to-white dark:bg-gradient-to-b dark:from-neutral-800 dark:to-neutral-900 m-0 rounded-none lg:px-24 ">
             <form method="dialog">
                 <label for="my_modal_3" class="btn btn-sm btn-circle btn-ghost absolute right-7">✕</label>
             </form>
