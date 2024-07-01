@@ -45,10 +45,10 @@ const clientImages = [
             </div>
         </section>
         <section class="">
-            <h1 class="font-title text-center my-10">Clients</h1>
+            <h1 class="font-title text-center my-6">Clients</h1>
             <Carousel :autoplay="2000" :items-to-show="3" :wrap-around="true" class="mb-10">
                 <Slide v-for="(item, index) in clientImages" :key="index">
-                    <div class="carousel__item">
+                    <div class="carousel__item p-6">
                         <img :src="item" alt="">
                     </div>
                 </Slide>
