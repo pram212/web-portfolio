@@ -53,7 +53,7 @@ const getDetail = (index) => {
 
 <template>
     <ContentCard title="Portfolio">
-        <div class="md:grid md:grid-cols-3 md:gap-4">
+        <div class="md:grid md:grid-cols-3 md:gap-4 space-y-3">
             <div v-for="(item, index) in portfolio" :key="index"
                 class="bg-transparent dark:border-2 overflow-hidden dark:border-neutral-600 rounded-md image-full w-full shadow-xl">
                 <figure>

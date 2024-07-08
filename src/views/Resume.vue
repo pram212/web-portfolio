@@ -78,7 +78,7 @@ const knowledges = ['programming', 'accounting', 'database', 'front end', 'banki
             <CourseSection :data="courses" />
         </section>
         <section class="md:grid md:grid-cols-2 md:gap-x-3 pt-6">
-            <div class="px-2">
+            <div class="px-2 mb-5">
                 <h1 class="mb-4 flex space-x-3 font-title">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                         stroke="currentColor" class="size-9 text-red-500">

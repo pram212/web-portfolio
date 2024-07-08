@@ -17,8 +17,8 @@ defineProps({ data: Object })
         <!-- List -->
         <div class=" dark:border-neutral-700 dark:border-2 rounded-md p-4 mt-3 mb-5 h-48" v-for="(item, index) in data" :key="index">
             <p class="text-gray-500 dark:text-gray-500 font-semibold">{{ item.start }} - {{ item.end }}</p>
-            <p class="text-title text-[24px] font-semibold my-1">{{ item.title }}</p>
-            <p class="text-title text-[18px]">{{ item.institution }}</p>
+            <p class="text-title-md my-1">{{ item.title }}</p>
+            <p class="text-title-sm">{{ item.institution }}</p>
         </div>
     </div>
 </template>

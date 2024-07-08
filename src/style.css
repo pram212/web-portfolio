@@ -20,6 +20,13 @@
         @apply text-black dark:text-white
     }
 
+    .text-title-md {
+        @apply text-black dark:text-white text-xl md:text-2xl font-semibold
+    }
+    .text-title-sm {
+        @apply text-black dark:text-white md:text-lg
+    }
+
     .font-brand {
         font-family: "Mochiy Pop One", sans-serif;
         @apply md:text-3xl text-2xl my-auto font-medium text-red-500

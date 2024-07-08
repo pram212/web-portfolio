@@ -6,8 +6,7 @@ export default {
   ],
   theme: {
     fontFamily: {
-      'display': ['Oswald',],
-      'body': ['"Open Sans"',],
+      'sans': ['Helvetica', 'Arial', 'sans-serif'],
     },
     extend: {},
   },

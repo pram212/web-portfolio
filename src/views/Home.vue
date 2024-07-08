@@ -11,8 +11,8 @@ import Linkedin from '../components/Linkedin.vue'
                 <img src="/foto.jpg" />
             </div>
         </div>
-        <h3 class="mt-2 mb-1 text-5xl font-semibold text-gray-900 dark:text-white capitalize">pramono</h3>
-        <p class="mb-4 text-gray-600 dark:text-gray-500 font-medium text-lg">Web Developer</p>
+        <h3 class="mt-4 mb-1 text-3xl font-semibold text-gray-900 dark:text-white capitalize">pramono A.Md</h3>
+        <p class="mb-4 text-muted text-lg">Web Developer</p>
         <div class="flex justify-center space-x-5 mb-7">
             <a href="" class="bg-transparent dark:bg-neutral-800 p-[10px] rounded-md hover:btn-primary">
                 <FaceBook />
