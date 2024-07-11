@@ -1,60 +1,17 @@
 <script setup>
 import { ref } from "vue";
 import ContentCard from "../components/ContentCard.vue"
-const portfolio = [
-    {
-        image: "https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg",
-        type: 'Web Development',
-        name: 'Insurance System',
-        tech: "Laravel, Vue.js, Tailwind",
-        client: "PT Asuransi Syariah Al-Amin",
-        demo: "www.dev.alamincore.com"
-    },
-    {
-        image: "https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg",
-        type: 'Web Development',
-        name: 'Finance System',
-        tech: "Laravel, Bootstrap, Jquery",
-        client: "PT Asuransi Nasional Indonesia",
-        demo: "www.akui-dev.nasionalre.com"
-    },
-    {
-        image: "https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg",
-        type: 'Web Development',
-        name: 'ERP System',
-        tech: "PHP, Mysql, Bootstrap",
-        client: "Cimb Niaga",
-        demo: "dbss.cimbiaga.com"
-    },
-    {
-        image: "https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg",
-        type: 'Web Development',
-        name: 'Voting System',
-        tech: "Laravel, Bootsrap, Jquery",
-        client: "-",
-        demo: "www.voting.pram.web.id"
-    },
-    {
-        image: "https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg",
-        type: 'Web Development',
-        name: 'Stock Management System',
-        tech: "Codeigniter, Bootsrap, Jquery",
-        client: "PT Citra Indonesia",
-        demo: "-"
-    }
-]
+import { portfolios } from "../resources/data"
 
 const detail = ref(Object)
+const getDetail = (index) => { detail.value = portfolios[index] }
 
-const getDetail = (index) => {
-    detail.value = portfolio[index]
-}
 </script>
 
 <template>
     <ContentCard title="Portfolio">
         <div class="md:grid md:grid-cols-3 md:gap-4 space-y-3">
-            <div v-for="(item, index) in portfolio" :key="index"
+            <div v-for="(item, index) in portfolios" :key="index"
                 class="bg-transparent dark:border-2 overflow-hidden dark:border-neutral-600 rounded-md image-full w-full shadow-xl">
                 <figure>
                     <img :src="item.image" alt="Shoes" />
@@ -63,7 +20,7 @@ const getDetail = (index) => {
                     <p class="text-muted font-semibold">{{ item.type }}</p>
                     <h2 class="card-title text-title">{{ item.name }}</h2>
                     <div class="card-actions justify-end">
-                        <label class="btn btn-sm btn-primary" for="my_modal_3" @click="getDetail(index)" >Learn More</label>
+                        <label class="btn btn-sm btn-primary" for="modal_detail" @click="getDetail(index)" >Learn More</label>
                     </div>
                 </div>
             </div>
@@ -71,11 +28,11 @@ const getDetail = (index) => {
     </ContentCard>
 
     <!-- detail portfolio modal -->
-    <input type="checkbox" id="my_modal_3" class="modal-toggle" />
-    <dialog id="my_modal_3" class="modal modal-bottom bg-white bg-opacity-30">
+    <input type="checkbox" id="modal_detail" class="modal-toggle" />
+    <dialog id="modal_detail" class="modal modal-bottom bg-white bg-opacity-30">
         <div class="modal-box bg-gradient-to-b from-purple-200 to-white dark:bg-gradient-to-b dark:from-neutral-800 dark:to-neutral-900 m-0 rounded-none lg:px-24 ">
             <form method="dialog">
-                <label for="my_modal_3" class="btn btn-sm btn-circle btn-ghost absolute right-7">✕</label>
+                <label for="modal_detail" class="btn btn-sm btn-circle btn-ghost absolute right-7">✕</label>
             </form>
             <div class="flex items-center">
                 <h3 class="text-lg font-bold text-red-500 mx-auto">{{ detail.name }}</h3>

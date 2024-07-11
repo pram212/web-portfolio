@@ -1,3 +1,7 @@
+<script setup>
+const props = defineProps({ phoneNumber : String })
+</script>
+
 <template>
     <div class="flex space-x-2">
         <div class="btn bg-white text-pink-600 dark:bg-base-300 border-none">
@@ -9,7 +13,7 @@
         </div>
         <div>
             <p class="text-sm font-medium text-gray-500">Phone</p>
-            <p class="font-medium text-black dark:text-white">085880541729</p>
+            <p class="font-medium text-black dark:text-white">{{ phoneNumber }}</p>
         </div>
     </div>
 </template>

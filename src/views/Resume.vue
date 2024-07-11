@@ -4,68 +4,7 @@ import EducationSection from "../components/ResumeComponents/Education.vue"
 import ExperienceSection from "../components/ResumeComponents/Experience.vue"
 import CourseSection from "../components/ResumeComponents/Course.vue"
 import ProgressBar from "../components/Progress.vue"
-
-const educations = [
-    {
-        start: '2014', 
-        end: '2017', 
-        title: 'Accosiate Degree', 
-        institution: 'Stebank Islam Mr. Sjafruddin Prawiranegara, Jakarta, Indonesia'
-    },
-    {
-        start: '2010', 
-        end: '2012', 
-        title: 'Senior High School', 
-        institution: 'SMAN 1 Cililin, Bandung, Indonesia'
-    },
-]
-
-const experiences = [
-    {
-        start: '2023', 
-        end: 'Present', 
-        title: 'Fullstack Developer', 
-        institution: 'PT Melkhior Teknologi'
-    },
-    {
-        start: '2022', 
-        end: '2023', 
-        title: 'Software Engineer', 
-        institution: 'PT Mandala Dwipantara Proteksi'
-    },
-]
-
-const courses = [
-    {
-        start: 'April 2021', 
-        end: 'Mei 2021', 
-        title: 'Laravel Web Development Course', 
-        institution: 'Sanbercode'
-    },
-    {
-        start: '2022', 
-        end: '2023', 
-        title: 'Laravel x Vue js Course', 
-        institution: 'Eduwork'
-    },
-]
-
-const skills = [
-    { tech: 'Laravel', value: 90 },
-    { tech: 'Tailwind CSS', value: 70 },
-    { tech: 'Vue.js', value: 70 },
-    { tech: 'PHP', value: 80 },
-    { tech: 'Mysql', value: 80 },
-    { tech: 'Javascript', value: 80 },
-    { tech: 'HTML', value: 90 },
-    { tech: 'CSS', value: 80 },
-    { tech: 'Bootstrap', value: 90 },
-    { tech: 'jQuery', value: 90 },
-    { tech: 'Node.js', value: 60 },
-    { tech: 'Express.js', value: 60 },
-]
-
-const knowledges = ['programming', 'accounting', 'database', 'front end', 'banking',]
+import { educations, experiences, courses, knowledges, skills } from "../resources/data.js";
 
 </script>
 

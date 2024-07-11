@@ -1,6 +1,6 @@
 <script setup>
 import ContentCard from "../components/ContentCard.vue"
-
+import { profile } from "../resources/data"
 </script>
 
 <template>
@@ -18,7 +18,7 @@ import ContentCard from "../components/ContentCard.vue"
                         </svg>
                         <div>
                             <h1 class="text-title text-lg font-medium">Phone :</h1>
-                            <p class="text-lg text-muted">+6285880541729</p>
+                            <p class="text-lg text-muted">{{ profile.phone }}</p>
                         </div>
                     </div>
                 </div>
@@ -33,7 +33,7 @@ import ContentCard from "../components/ContentCard.vue"
 
                         <div>
                             <h1 class="text-title text-lg font-medium">Email :</h1>
-                            <p class="text-lg text-muted">prmaono6236@gmail.com</p>
+                            <p class="text-lg text-muted">{{ profile.email }}</p>
                         </div>
                     </div>
                 </div>
@@ -49,7 +49,7 @@ import ContentCard from "../components/ContentCard.vue"
                         </svg>
                         <div>
                             <h1 class="text-title text-lg font-medium">Address :</h1>
-                            <p class="text-lg text-muted">Bandung, West Java, Indonesia</p>
+                            <p class="text-lg text-muted">{{ profile.address }}</p>
                         </div>
                     </div>
                 </div>

@@ -6,14 +6,7 @@ import EmailInfo from "../components/AboutComponents/EmailInfo.vue"
 import ContentCard from "../components/ContentCard.vue"
 import { Carousel, Pagination, Slide } from 'vue3-carousel';
 import 'vue3-carousel/dist/carousel.css';
-
-const clientImages = [
-    "/clients/al-amin.png", 
-    "/clients/cimb-niaga.png", 
-    "/clients/logo.png", 
-    "/clients/stay-beauty.png", 
-    "/clients/dcodes.png",
-]
+import { clientImages, profile } from "../resources/data"
 
 </script>
 
@@ -21,25 +14,20 @@ const clientImages = [
     <ContentCard title="About Me">
         <section class="md:flex md:space-x-8 mb-7">
             <div class="min-h-fit md:flex-1 mb-5">
-                <img src="/foto-2.jpg" class="rounded-[35px] border-none shadow-lg" />
+                <img :src="profile.foto2" class="rounded-[35px] border-none shadow-lg" />
             </div>
             <div class="content md:w-[60%]">
                 <section class="mb-4">
                     <h1 class="font-title">Who am i?</h1>
-                    <p class="text-muted md:leading-7">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa exercitationem eos enim totam
-                        voluptate quos quaerat minus, illo error asperiores esse similique illum veniam laboriosam!
-                        Illo
-                        alias ratione facere quia.
-                    </p>
+                    <p class="text-muted md:leading-7">{{ profile.bio }}</p>
                 </section>
                 <section class="mb-4">
                     <h1 class="font-title">Personal Info</h1>
                     <div class="md:grid md:grid-cols-2 md:gap-3 space-y-2">
-                        <PhoneInfo />
-                        <LocationInfo />
-                        <EmailInfo />
-                        <BirthdayInfo />
+                        <PhoneInfo :phoneNumber="profile.phone" />
+                        <LocationInfo :address="profile.address"/>
+                        <EmailInfo :email="profile.email"/>
+                        <BirthdayInfo :birthday="profile.birthday"/>
                     </div>
                 </section>
             </div>

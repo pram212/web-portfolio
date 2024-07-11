@@ -1,3 +1,6 @@
+<script setup>
+const props = defineProps({ birthday : String })
+</script>
 <template>
     <div class="flex space-x-2">
         <div class="btn bg-white text-purple-500 dark:bg-base-300 border-none">
@@ -9,7 +12,7 @@
         </div>
         <div>
             <p class="text-sm font-medium text-gray-500">Birtday</p>
-            <p class="font-medium text-black dark:text-white">September 16, 1994</p>
+            <p class="font-medium text-black dark:text-white">{{ birthday }}</p>
         </div>
     </div>
 </template>

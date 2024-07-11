@@ -1,3 +1,6 @@
+<script setup>
+const props = defineProps({ email : String })
+</script>
 <template>
     <div class="flex space-x-2">
         <div class="btn bg-white text-sky-300 dark:bg-base-300 border-none">
@@ -9,7 +12,7 @@
         </div>
         <div>
             <p class="text-sm font-medium text-gray-500">Email</p>
-            <p class="font-medium text-black dark:text-white">pramono6236@gmail.com</p>
+            <p class="font-medium text-black dark:text-white">{{ email }}</p>
         </div>
     </div>
 </template>

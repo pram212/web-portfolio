@@ -1,3 +1,7 @@
+<script setup>
+const props = defineProps({ address : String })
+</script>
+
 <template>
     <div class="flex space-x-2">
         <div class="btn bg-white text-red-400 dark:bg-base-300 border-none">
@@ -11,7 +15,7 @@
         </div>
         <div>
             <p class="text-sm font-medium text-gray-500">Location</p>
-            <p class="font-medium text-black dark:text-white">Bandung. Indonesia</p>
+            <p class="font-medium text-black dark:text-white">{{ address }}</p>
         </div>
     </div>
 </template>

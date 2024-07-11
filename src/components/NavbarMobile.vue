@@ -1,18 +1,5 @@
-<script setup>
-import { ref } from 'vue';
-
-const drawer = ref(null)
-
-function sidebarToggle() {
-    drawer.value.click()
-}
-
-</script>
-
-
 <template>
-    <div class="h-20 flex items-center justify-center bg-white dark:bg-black lg:hidden w-full">
-        <label for="my-drawer-4" ref="drawer" class="hidden"></label>
+    <div class="h-20 flex items-center justify-center bg-white dark:bg-transparent lg:hidden w-full">
         <div class="w-[90%] flex justify-between items-center">
             <h1 class="font-brand animate-fade-right">Pramono</h1>
             <div>
@@ -20,7 +7,7 @@ function sidebarToggle() {
                     <li>
                         <label class="swap swap-rotate bg-error rounded-full p-2">
                             <!-- this hidden checkbox controls the state -->
-                            <input type="checkbox" class="theme-controller" @change="$emit('themeToggle')" />
+                            <input type="checkbox" class="theme-controller" @change.prevent="$emit('themeToggle')" />
 
                             <!-- sun icon -->
                             <svg class="swap-off h-7 w-7 fill-current" xmlns="http://www.w3.org/2000/svg"
@@ -37,10 +24,10 @@ function sidebarToggle() {
                             </svg>
                         </label>
                     </li>
-                    <li>
-                        <label class="btn btn-circle swap swap-rotate bg-error border-none p-1" @click="sidebarToggle()">
+                    <li @click.prevent="$emit('sidebarToggle')">
+                        <label for="memek" class="btn btn-circle swap swap-rotate bg-error border-none p-1">
                             <!-- this hidden checkbox controls the state -->
-                            <input type="checkbox"/>
+                            <input type="checkbox" id="memek"/>
 
                             <!-- hamburger icon -->
                             <svg class="swap-off h-7 w-7 fill-current" xmlns="http://www.w3.org/2000/svg"
