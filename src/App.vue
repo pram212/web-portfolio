@@ -27,10 +27,9 @@ onMounted(() => {
         </main>
       </div>
     </div>
-    <div class="drawer-side">
-      <label for="my-drawer-4" aria-label="close sidebar" class="drawer-overlay"></label>
+    <div class="drawer-side mt-20">
       <!-- Sidebar content here -->
-      <Sidebar />
+      <Sidebar @theme-toggle="toggleDark()"/>
     </div>
   </div>
 </template>

@@ -1,4 +1,4 @@
-import { createMemoryHistory, createRouter } from "vue-router";
+import { createMemoryHistory, createRouter, createWebHistory } from "vue-router";
 
 import HomeVue from "../views/Home.vue";
 import AboutVue from "../views/About.vue";
@@ -15,9 +15,8 @@ const routes = [
 ];
 
 const router = createRouter({
-  history: createMemoryHistory(),
-  linkActiveClass:
-    "bg-gradient-to-r from-[#FA5252] to-[#DD2476] font-medium font-popins text-white",
+  history: createWebHistory(),
+  linkActiveClass: "bg-gradient-to-r from-[#FA5252] to-[#DD2476] font-medium font-popins text-white",
   linkExactActiveClass: "bg-base-300 text-gray-900",
   routes,
 });

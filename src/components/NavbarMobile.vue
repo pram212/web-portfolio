@@ -1,7 +1,20 @@
+<script setup>
+import { ref } from 'vue';
+
+const drawer = ref(null)
+
+function sidebarToggle() {
+    drawer.value.click()
+}
+
+</script>
+
+
 <template>
-    <div class="h-20 flex items-center justify-center bg-white dark:bg-black w-full md:hidden">
+    <div class="h-20 flex items-center justify-center bg-white dark:bg-black lg:hidden w-full">
+        <label for="my-drawer-4" ref="drawer" class="hidden"></label>
         <div class="w-[90%] flex justify-between items-center">
-            <h1 class="">Pramono</h1>
+            <h1 class="font-brand animate-fade-right">Pramono</h1>
             <div>
                 <ul class="menu menu-horizontal space-x-1">
                     <li>
@@ -25,9 +38,9 @@
                         </label>
                     </li>
                     <li>
-                        <label class="btn btn-circle swap swap-rotate bg-error p-1 drawer-button" for="my-drawer-4">
+                        <label class="btn btn-circle swap swap-rotate bg-error border-none p-1" @click="sidebarToggle()">
                             <!-- this hidden checkbox controls the state -->
-                            <input type="checkbox" class="theme-controller"/>
+                            <input type="checkbox"/>
 
                             <!-- hamburger icon -->
                             <svg class="swap-off h-7 w-7 fill-current" xmlns="http://www.w3.org/2000/svg"
