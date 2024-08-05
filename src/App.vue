@@ -11,6 +11,9 @@ const showSidebar = ref(false)
 const themeToggle = useToggle(isDark)
 const sidebarToggle = () => showSidebar.value = !showSidebar.value
 
+onMounted(() => {
+})
+
 </script>
 
 <template>

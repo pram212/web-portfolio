@@ -21,7 +21,7 @@
     }
 
     .text-title-md {
-        @apply text-black dark:text-white text-xl md:text-2xl font-semibold
+        @apply text-black dark:text-white text-xl font-semibold
     }
     .text-title-sm {
         @apply text-black dark:text-white md:text-lg

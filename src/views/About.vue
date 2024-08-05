@@ -4,9 +4,26 @@ import LocationInfo from "../components/AboutComponents/LocationInfo.vue"
 import PhoneInfo from "../components/AboutComponents/PhoneInfo.vue"
 import EmailInfo from "../components/AboutComponents/EmailInfo.vue"
 import ContentCard from "../components/ContentCard.vue"
-import { Carousel, Pagination, Slide } from 'vue3-carousel';
+import { Carousel, Slide } from 'vue3-carousel';
 import 'vue3-carousel/dist/carousel.css';
-import { clientImages, profile } from "../resources/data"
+import { clientImages, biodata, contact } from "../resources/data"
+import axios from 'axios';
+import { onMounted, ref } from 'vue';
+
+const profile = ref(biodata);
+const contactData = ref(contact);
+
+onMounted(() => {
+    if (import.meta.env.VITE_USE_SERVICE=='TRUE') {
+        const apiBaseUrl = import.meta.env.VITE_APP_API_URL
+        axios.get(`${apiBaseUrl}/biodata`)
+            .then((response) => profile.value = response.data )
+            .catch( (error) => console.log('gagal fetch data biodata: ', error) )
+        axios.get(`${apiBaseUrl}/contacts`)
+            .then((response) => contactData.value = response.data )
+            .catch( (error) => console.log('gagal fetch data contact: ', error) )
+    }
+})
 
 </script>
 
@@ -14,19 +31,19 @@ import { clientImages, profile } from "../resources/data"
     <ContentCard title="About Me">
         <section class="md:flex md:space-x-8 mb-7">
             <div class="min-h-fit md:flex-1 mb-5">
-                <img :src="profile.foto2" class="rounded-[35px] border-none shadow-lg" />
+                <img :src="profile.photo2" class="rounded-[35px] border-none shadow-lg" />
             </div>
             <div class="content md:w-[60%]">
                 <section class="mb-4">
                     <h1 class="font-title">Who am i?</h1>
-                    <p class="text-muted md:leading-7">{{ profile.bio }}</p>
+                    <p class="text-muted md:leading-7" v-html="profile.summary"></p>
                 </section>
                 <section class="mb-4">
                     <h1 class="font-title">Personal Info</h1>
                     <div class="md:grid md:grid-cols-2 md:gap-3 space-y-2">
-                        <PhoneInfo :phoneNumber="profile.phone" />
-                        <LocationInfo :address="profile.address"/>
-                        <EmailInfo :email="profile.email"/>
+                        <PhoneInfo :phoneNumber="contactData.phone" />
+                        <LocationInfo :address="contactData.address"/>
+                        <EmailInfo :email="contactData.email"/>
                         <BirthdayInfo :birthday="profile.birthday"/>
                     </div>
                 </section>

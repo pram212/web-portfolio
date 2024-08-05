@@ -2,17 +2,32 @@
 import FaceBook from '../components/Fb.vue'
 import Github from '../components/Github.vue'
 import Linkedin from '../components/Linkedin.vue'
-import { profile, socialMedia } from "../resources/data"
+import { biodata, socialMedia } from "../resources/data"
+import axios from 'axios';
+import { onMounted, ref } from 'vue';
+
+const profile = ref(biodata);
+
+onMounted(() => {
+    if (import.meta.env.VITE_USE_SERVICE=='TRUE') {
+        const apiBaseUrl = import.meta.env.VITE_APP_API_URL
+        axios.get(`${apiBaseUrl}/biodata`)
+            .then((response) => profile.value = response.data )
+            .catch( (error) => console.log('gagal fetch data education: ', error) )
+    }
+})
 </script>
 
 <template>
     <div class="mx-auto text-center animate-fade-down">
         <div class="avatar shadow-2xl rounded-full">
             <div class="rounded-full w-[250px] h-[250px] 2xl:w-[250px] 2xl:h-[250px]">
-                <img :src="profile.foto1" />
+                <img :src="profile.photo" />
             </div>
         </div>
-        <h3 class="mt-4 mb-1 text-3xl font-semibold text-gray-900 dark:text-white capitalize">{{ profile.name }} {{ profile.degree }}</h3>
+        <h3 class="mt-4 mb-1 text-3xl font-semibold text-gray-900 dark:text-white capitalize">
+            {{ profile.name }} {{ profile.degree }}
+        </h3>
         <p class="mb-4 text-muted text-lg">{{ profile.title }}</p>
         <div class="flex justify-center space-x-5 mb-7">
             <a :href="socialMedia.facebook" class="bg-transparent dark:bg-neutral-800 p-[10px] rounded-md hover:btn-primary">

@@ -1,5 +1,19 @@
 <script setup>
-defineProps({ data: Object })
+import axios from 'axios';
+import { onMounted, ref } from 'vue';
+import { educations } from "../../resources/data";
+
+const data = ref(educations);
+
+onMounted(() => {
+    if (import.meta.env.VITE_USE_SERVICE=='TRUE') {
+        const apiBaseUrl = import.meta.env.VITE_APP_API_URL
+        axios.get(`${apiBaseUrl}/educations`)
+            .then((response) => data.value = response.data )
+            .catch( (error) => console.log('gagal fetch data education: ', error) )
+    }
+})
+
 </script>
 
 <template>

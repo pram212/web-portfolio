@@ -1,6 +1,19 @@
 <script setup>
 import ContentCard from "../components/ContentCard.vue"
-import { profile } from "../resources/data"
+import { contact } from "../resources/data"
+import axios from 'axios';
+import { onMounted, ref } from 'vue';
+
+const data = ref(contact);
+
+onMounted(() => {
+    if (import.meta.env.VITE_USE_SERVICE=='TRUE') {
+        const apiBaseUrl = import.meta.env.VITE_APP_API_URL
+        axios.get(`${apiBaseUrl}/contacts`)
+            .then((response) => data.value = response.data )
+            .catch( (error) => console.log('gagal fetch data contact: ', error) )
+    }
+})
 </script>
 
 <template>
@@ -18,7 +31,7 @@ import { profile } from "../resources/data"
                         </svg>
                         <div>
                             <h1 class="text-title text-lg font-medium">Phone :</h1>
-                            <p class="text-lg text-muted">{{ profile.phone }}</p>
+                            <p class="text-lg text-muted">{{ data.phone }}</p>
                         </div>
                     </div>
                 </div>
@@ -33,7 +46,7 @@ import { profile } from "../resources/data"
 
                         <div>
                             <h1 class="text-title text-lg font-medium">Email :</h1>
-                            <p class="text-lg text-muted">{{ profile.email }}</p>
+                            <p class="text-lg text-muted">{{ data.email }}</p>
                         </div>
                     </div>
                 </div>
@@ -49,7 +62,7 @@ import { profile } from "../resources/data"
                         </svg>
                         <div>
                             <h1 class="text-title text-lg font-medium">Address :</h1>
-                            <p class="text-lg text-muted">{{ profile.address }}</p>
+                            <p class="text-lg text-muted">{{ data.address }}</p>
                         </div>
                     </div>
                 </div>

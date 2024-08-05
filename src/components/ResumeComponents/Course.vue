@@ -1,5 +1,20 @@
 <script setup>
-defineProps({ data: Object })
+import axios from 'axios';
+import { onMounted, ref } from 'vue';
+import { courses } from "../../resources/data";
+import moment from 'moment';
+
+const data = ref(courses);
+const dateConvert = (dateString) => moment(dateString).format('MMM YYYY')
+
+onMounted(() => {
+    if (import.meta.env.VITE_USE_SERVICE=='TRUE') {
+        const apiBaseUrl = import.meta.env.VITE_APP_API_URL
+        axios.get(`${apiBaseUrl}/courses`)
+            .then((response) => data.value = response.data )
+            .catch( (error) => console.log('gagal fetch data course: ', error) )
+    }
+})
 
 </script>
 
@@ -16,8 +31,8 @@ defineProps({ data: Object })
         </div>
         <!-- List -->
         <div class=" dark:border-neutral-700 dark:border-2 rounded-md p-4 mt-3 mb-5" v-for="(item, index) in data" :key="index">
-            <p class="text-gray-500 dark:text-gray-500 font-semibold">{{ item.start }} - {{ item.end }}</p>
-            <p class="text-title-md my-1">{{ item.title }}</p>
+            <p class="text-gray-500 dark:text-gray-500 font-semibold">{{ dateConvert(item.start) }} - {{ dateConvert(item.end) }}</p>
+            <p class="text-title-md my-1">{{ item.name }}</p>
             <p class="text-title-sm">{{ item.institution }}</p>
         </div>
     </div>

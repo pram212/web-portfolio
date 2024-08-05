@@ -1,14 +1,17 @@
-export const profile = { 
+export const biodata = { 
     name: 'Pramono', 
     title: 'Fullstack Developer',  
     degree: 'A.Md',
     birthday: 'September 16, 1994',
-    address: 'Bandung, Indonesia',
-    phone: '085880541729',
-    email: 'pramono6236@gmail.com',
     foto1: '/foto.jpg',
     foto2: '/foto-2.jpg',
     bio: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa exercitationem eos enim totam voluptate quos quaerat minus, illo error asperiores esse similique illum veniam laboriosam! Illo alias ratione facere quia.'
+}
+
+export const contact = {
+    address: 'Bandung, Indonesia',
+    phone: '085880541729',
+    email: 'pramono6236@gmail.com',
 }
 
 export const socialMedia = {
@@ -36,14 +39,14 @@ export const experiences = [
     {
         start: '2023', 
         end: 'Present', 
-        title: 'Fullstack Developer', 
-        institution: 'PT Melkhior Teknologi'
+        position: 'Fullstack Developer', 
+        company: 'PT Melkhior Teknologi'
     },
     {
         start: '2022', 
         end: '2023', 
-        title: 'Software Engineer', 
-        institution: 'PT Mandala Dwipantara Proteksi'
+        position: 'Software Engineer', 
+        company: 'PT Mandala Dwipantara Proteksi'
     },
 ]
 
@@ -51,30 +54,30 @@ export const courses = [
     {
         start: 'April 2021', 
         end: 'Mei 2021', 
-        title: 'Laravel Web Development Course', 
+        name: 'Laravel Web Development Course', 
         institution: 'Sanbercode'
     },
     {
         start: '2022', 
         end: '2023', 
-        title: 'Laravel x Vue js Course', 
+        name: 'Laravel x Vue js Course', 
         institution: 'Eduwork'
     },
 ]
 
 export const skills = [
-    { tech: 'Laravel', value: 90 },
-    { tech: 'Tailwind CSS', value: 70 },
-    { tech: 'Vue.js', value: 70 },
-    { tech: 'PHP', value: 80 },
-    { tech: 'Mysql', value: 80 },
-    { tech: 'Javascript', value: 80 },
-    { tech: 'HTML', value: 90 },
-    { tech: 'CSS', value: 80 },
-    { tech: 'Bootstrap', value: 90 },
-    { tech: 'jQuery', value: 90 },
-    { tech: 'Node.js', value: 60 },
-    { tech: 'Express.js', value: 60 },
+    { name: 'Laravel', presentage: 90 },
+    { name: 'Tailwind CSS', presentage: 70 },
+    { name: 'Vue.js', presentage: 70 },
+    { name: 'PHP', presentage: 80 },
+    { name: 'Mysql', presentage: 80 },
+    { name: 'Javascript', presentage: 80 },
+    { name: 'HTML', presentage: 90 },
+    { name: 'CSS', presentage: 80 },
+    { name: 'Bootstrap', presentage: 90 },
+    { name: 'jQuery', presentage: 90 },
+    { name: 'Node.js', presentage: 60 },
+    { name: 'Express.js', presentage: 60 },
 ]
 
 export const knowledges = ['programming', 'accounting', 'database', 'front end', 'banking']
@@ -89,43 +92,67 @@ export const clientImages = [
 
 export const portfolios = [
     {
-        image: "https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg",
+        images: [
+            "https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
+        ],
         type: 'Web Development',
         name: 'Insurance System',
-        tech: "Laravel, Vue.js, Tailwind",
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo enim possimus voluptatem in consequuntur dolor placeat quasi similique inventore a! Harum, soluta magni error optio earum nam eligendi. Nostrum corporis unde provident, a dignissimos cupiditate debitis, laudantium tempore expedita quidem voluptas rerum inventore reprehenderit quae delectus porro. Consectetur, eos necessitatibus!',
+        start: '2023-08-01',
+        end: '2023-08-01',
+        modules: ["User Management", "Role Admin", "Summary Of Commision"],
+        tech: ["Laravel", "Vue.js", "Tailwind"],
         client: "PT Asuransi Syariah Al-Amin",
-        demo: "www.dev.alamincore.com"
+        demo: { 
+            url: "www.dev.alamincore.com" 
+        }
     },
     {
-        image: "https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg",
+        image: ["https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"],
         type: 'Web Development',
         name: 'Finance System',
-        tech: "Laravel, Bootstrap, Jquery",
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo enim possimus voluptatem in consequuntur dolor placeat quasi similique inventore a! Harum, soluta magni error optio earum nam eligendi. Nostrum corporis unde provident, a dignissimos cupiditate debitis, laudantium tempore expedita quidem voluptas rerum inventore reprehenderit quae delectus porro. Consectetur, eos necessitatibus!',
+        start: '2023-08-01',
+        end: '2023-08-01',
+        modules: ["User Management", "Role Admin", "Summary Of Commision"],
+        tech: ["Laravel", "Vue.js", "Tailwind"],
         client: "PT Asuransi Nasional Indonesia",
-        demo: "www.akui-dev.nasionalre.com"
+        demo: { url: "www.akui-dev.nasionalre.com"}
     },
     {
-        image: "https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg",
+        image: ["https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"],
         type: 'Web Development',
         name: 'ERP System',
-        tech: "PHP, Mysql, Bootstrap",
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo enim possimus voluptatem in consequuntur dolor placeat quasi similique inventore a! Harum, soluta magni error optio earum nam eligendi. Nostrum corporis unde provident, a dignissimos cupiditate debitis, laudantium tempore expedita quidem voluptas rerum inventore reprehenderit quae delectus porro. Consectetur, eos necessitatibus!',
+        start: '2023-08-01',
+        end: '2023-08-01',
+        modules: ["User Management", "Role Admin", "Summary Of Commision"],
+        tech: ["Laravel", "Vue.js", "Tailwind"],
         client: "Cimb Niaga",
-        demo: "dbss.cimbiaga.com"
+        demo: { url: "dbss.cimbiaga.com"}
     },
     {
-        image: "https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg",
+        image: ["https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"],
         type: 'Web Development',
         name: 'Voting System',
-        tech: "Laravel, Bootsrap, Jquery",
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo enim possimus voluptatem in consequuntur dolor placeat quasi similique inventore a! Harum, soluta magni error optio earum nam eligendi. Nostrum corporis unde provident, a dignissimos cupiditate debitis, laudantium tempore expedita quidem voluptas rerum inventore reprehenderit quae delectus porro. Consectetur, eos necessitatibus!',
+        start: '2023-08-01',
+        end: '2023-08-01',
+        modules: ["User Management", "Role Admin", "Summary Of Commision"],
+        tech: ["Laravel", "Vue.js", "Tailwind"],
         client: "-",
-        demo: "www.voting.pram.web.id"
+        demo: { url: "www.voting.pram.web.id" }
     },
     {
-        image: "https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg",
+        image: ["https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"],
         type: 'Web Development',
         name: 'Stock Management System',
-        tech: "Codeigniter, Bootsrap, Jquery",
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo enim possimus voluptatem in consequuntur dolor placeat quasi similique inventore a! Harum, soluta magni error optio earum nam eligendi. Nostrum corporis unde provident, a dignissimos cupiditate debitis, laudantium tempore expedita quidem voluptas rerum inventore reprehenderit quae delectus porro. Consectetur, eos necessitatibus!',
+        start: '2023-08-01',
+        end: '2023-08-01',
+        modules: ["User Management", "Role Admin", "Summary Of Commision"],
+        tech: ["Laravel", "Vue.js", "Tailwind"],
         client: "PT Citra Indonesia",
-        demo: "-"
+        demo: { url: "-" }
     }
 ]
