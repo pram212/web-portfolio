@@ -7,6 +7,7 @@ import axios from 'axios';
 import { onMounted, ref } from 'vue';
 
 const profile = ref(biodata);
+const links = ref(socialMedia);
 
 onMounted(() => {
     if (import.meta.env.VITE_USE_SERVICE=='TRUE') {
@@ -14,6 +15,10 @@ onMounted(() => {
         axios.get(`${apiBaseUrl}/biodata`)
             .then((response) => profile.value = response.data )
             .catch( (error) => console.log('gagal fetch data education: ', error) )
+
+        axios.get(`${apiBaseUrl}/links`)
+            .then((response) => links.value = response.data )
+            .catch( (error) => console.log('gagal fetch data link: ', error) )
     }
 })
 </script>
@@ -30,14 +35,8 @@ onMounted(() => {
         </h3>
         <p class="mb-4 text-muted text-lg">{{ profile.title }}</p>
         <div class="flex justify-center space-x-5 mb-7">
-            <a :href="socialMedia.facebook" class="bg-transparent dark:bg-neutral-800 p-[10px] rounded-md hover:btn-primary">
-                <FaceBook />
-            </a>
-            <a :href="socialMedia.github" target="_blank" class="bg-transparent dark:bg-neutral-800 p-[10px] rounded-md hover:btn-primary">
-                <Github />
-            </a>
-            <a :href="socialMedia.linkedin" target="_blank" class="bg-transparent dark:bg-neutral-800 p-[10px] rounded-md hover:btn-primary">
-                <Linkedin />
+            <a v-for="(item, index) in links" :key="index" :href="item.url" class="bg-transparent dark:bg-neutral-800 p-[10px] rounded-md hover:btn-primary">
+                <svg class="h-6 w-6" v-html="item.svg"></svg>
             </a>
         </div>
         <a href="" class="bg-gradient-to-r from-[#FA5252] to-[#DD2476] duration-200 transition ease-linear hover:bg-gradient-to-l px-8 py-3 text-lg text-white rounded-[35px]">Download CV</a>
