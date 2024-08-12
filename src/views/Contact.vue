@@ -4,7 +4,28 @@ import { contact } from "../resources/data"
 import axios from 'axios';
 import { onMounted, ref } from 'vue';
 
-const data = ref(contact);
+const data = ref(contact)
+const sending = ref(false)
+
+const formMessage = ref({
+    name: null,
+    email: null,
+    message: null,
+})
+
+const sendMessage = () => {
+    sending.value = true
+    const endPoint = import.meta.env.VITE_APP_API_URL + '/send-message';
+    axios.post(endPoint, formMessage.value)
+        .then((res) => {
+            sending.value=false
+            alert(res.data)
+        })
+        .catch((error) => { 
+            sending.value=false
+            console.log(error) 
+        })
+}
 
 onMounted(() => {
     if (import.meta.env.VITE_USE_SERVICE=='TRUE') {
@@ -76,22 +97,24 @@ onMounted(() => {
                     <div class="label">
                         <span class="label-text text-muted font-semibold">Name *</span>
                     </div>
-                    <input type="text" class="input input-bordered input-ghost w-full max-w-xs" required/>
+                    <input type="text" v-model="formMessage.name" class="input input-bordered input-ghost w-full max-w-xs" required/>
                 </label>
                 <label class="form-control w-full max-w-xs">
                     <div class="label">
                         <span class="label-text text-muted font-semibold">Email *</span>
                     </div>
-                    <input type="email" class="input input-bordered input-ghost w-full max-w-xs" required />
+                    <input type="email" v-model="formMessage.email" class="input input-bordered input-ghost w-full max-w-xs" required />
                 </label>
                 <label class="form-control">
                     <div class="label">
                         <span class="label-text text-muted font-semibold">Message *</span>
                     </div>
-                    <textarea class="textarea textarea-bordered input-ghost h-24" required></textarea>
+                    <textarea class="textarea textarea-bordered input-ghost h-24" v-model="formMessage.message" required></textarea>
                 </label>
 
-                <button class="btn btn-primary btn-sm mt-3 bg-white">Submit</button>
+                <button :disabled="sending" type="button" @click="sendMessage" class="btn btn-primary btn-sm mt-3 bg-white">
+                    {{ sending ? "Sendig.." : "Send" }}
+                </button>
             </div>
         </div>
     </content-card>
