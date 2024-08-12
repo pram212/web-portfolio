@@ -5,11 +5,11 @@
 @layer components {
     .bg-day {
         @apply bg-no-repeat bg-fixed bg-center bg-cover;
-        background-image: url('bg.jpg')
+        background-image: url('/bg.jpg')
     }
     .bg-night {
         @apply bg-no-repeat bg-fixed bg-center bg-cover;
-        background-image: url('bg-dark.jpg')
+        background-image: url('/bg-dark.jpg')
     }
 
     .btn-primary {
