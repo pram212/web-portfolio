@@ -1,7 +1,4 @@
 <script setup>
-import FaceBook from '../components/Fb.vue'
-import Github from '../components/Github.vue'
-import Linkedin from '../components/Linkedin.vue'
 import { biodata, socialMedia } from "../resources/data"
 import axios from 'axios';
 import { onMounted, ref } from 'vue';
@@ -25,11 +22,13 @@ onMounted(() => {
 
 <template>
     <div class="mx-auto text-center animate-fade-down">
-        <div class="avatar shadow-2xl rounded-full">
-            <div class="rounded-full w-[250px] h-[250px] 2xl:w-[250px] 2xl:h-[250px]">
-                <img :src="profile.photo" />
+        <Suspense>
+            <div class="avatar shadow-2xl rounded-full">
+                <div class="rounded-full w-[250px] h-[250px] 2xl:w-[250px] 2xl:h-[250px]">
+                    <img :src="profile.photo" />
+                </div>
             </div>
-        </div>
+        </Suspense>
         <h3 class="mt-4 mb-1 text-3xl font-semibold text-gray-900 dark:text-white capitalize">
             {{ profile.name }} {{ profile.degree }}
         </h3>
@@ -39,6 +38,6 @@ onMounted(() => {
                 <svg class="h-6 w-6" v-html="item.svg"></svg>
             </a>
         </div>
-        <a href="" class="bg-gradient-to-r from-[#FA5252] to-[#DD2476] duration-200 transition ease-linear hover:bg-gradient-to-l px-8 py-3 text-lg text-white rounded-[35px]">Download CV</a>
+        <!-- <a href="" class="bg-gradient-to-r from-[#FA5252] to-[#DD2476] duration-200 transition ease-linear hover:bg-gradient-to-l px-8 py-3 text-lg text-white rounded-[35px]">Download CV</a> -->
     </div>
 </template>

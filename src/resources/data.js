@@ -82,12 +82,23 @@ export const skills = [
 
 export const knowledges = ['programming', 'accounting', 'database', 'front end', 'banking']
 
-export const clientImages = [
-    "/clients/al-amin.png", 
-    "/clients/cimb-niaga.png", 
-    "/clients/logo.png", 
-    "/clients/stay-beauty.png", 
-    "/clients/dcodes.png",
+export const clients = [
+    {
+        company: 'akjhdfkdahdfk',
+        logo: "/clients/al-amin.png", 
+    },
+    {
+        company: 'akjhdfkdahdfk',
+        logo: "/clients/cimb-niaga.png",
+    },
+    {
+        company: 'akjhdfkdahdfk',
+        logo: "/clients/stay-beauty.png", 
+    },
+    {
+        company: 'akjhdfkdahdfk',
+        logo:  "/clients/dcodes.png",
+    },
 ]
 
 export const portfolios = [
