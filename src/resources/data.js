@@ -3,9 +3,9 @@ export const biodata = {
     title: 'Fullstack Developer',  
     degree: 'A.Md',
     birthday: 'September 16, 1994',
-    foto1: '/foto.jpg',
-    foto2: '/foto-2.jpg',
-    bio: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa exercitationem eos enim totam voluptate quos quaerat minus, illo error asperiores esse similique illum veniam laboriosam! Illo alias ratione facere quia.'
+    photo: '/foto.jpg',
+    photo2: '/foto-2.jpg',
+    summary: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa exercitationem eos enim totam voluptate quos quaerat minus, illo error asperiores esse similique illum veniam laboriosam! Illo alias ratione facere quia.'
 }
 
 export const contact = {
