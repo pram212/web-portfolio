@@ -2,21 +2,24 @@
 import ContentCard from "../components/ContentCard.vue"
 import { portfolios } from "../resources/data"
 import axios from 'axios';
-import { onMounted, ref, computed } from 'vue';
+import { onMounted, ref, } from 'vue';
 import moment from 'moment';
-import { Carousel, Pagination, Slide } from 'vue3-carousel';
+import { Carousel, Slide, } from 'vue3-carousel';
 import 'vue3-carousel/dist/carousel.css';
+import { formatDate } from "../helpers";
 
 const detail = ref(Object)
 const data = ref(null);
 
 const getDetail = (index) => {
     detail.value = data.value[index]
-    console.log(detail.value);
-
 }
 
-const dateConvert = (dateString) => moment(dateString).format('MMM YYYY')
+const dateConvert = (dateString, ifNoDate = 'Present') => {
+    const converted = moment(dateString).format('MMM YYYY')
+    const inValidDate = (converted == 'Invalid date')
+    return inValidDate ? ifNoDate : converted;
+}
 
 onMounted(() => {
     if (import.meta.env.VITE_USE_SERVICE == 'TRUE') {
@@ -73,7 +76,7 @@ onMounted(() => {
                         <span class="font-semibold">Type</span> : <span>{{ detail.type }}</span>
                     </p>
                     <p class="capitalize text-title">
-                        <span class="font-semibold">Date</span> : <span>{{ dateConvert(detail.start) }} - {{ dateConvert(detail.end) }}</span>
+                        <span class="font-semibold">Date</span> : <span>{{ formatDate(detail.start) }} - {{ formatDate(detail.end) }}</span>
                     </p>
                 </div>
                 <div>

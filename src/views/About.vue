@@ -9,6 +9,7 @@ import 'vue3-carousel/dist/carousel.css';
 import { clients, biodata, contact } from "../resources/data"
 import axios from 'axios';
 import { onMounted, ref } from 'vue';
+import { formatDate } from "../helpers"
 
 const profile = ref(biodata);
 const contactData = ref(contact);
@@ -51,7 +52,7 @@ onMounted(() => {
                         <PhoneInfo :phoneNumber="contactData.phone" />
                         <LocationInfo :address="contactData.address"/>
                         <EmailInfo :email="contactData.email"/>
-                        <BirthdayInfo :birthday="profile.birthday"/>
+                        <BirthdayInfo :birthday="formatDate(profile.birthday, 'DD MMM YYYY')"/>
                     </div>
                 </section>
             </div>
