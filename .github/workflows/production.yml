@@ -1,52 +1,35 @@
-name: Deploy Vue.js to EC2
+name: Push-to-EC2
 
+# Trigger deployment only on push to main branch
 on:
   push:
-    branches:
-      - main # jalankan workflow saat ada push ke branch main
-  pull_request:
     branches:
       - main
 
 jobs:
-  build:
+  deploy:
+    name: Deploy to EC2 on master branch push
     runs-on: ubuntu-latest
 
     steps:
-      # 1. Checkout repository dari GitHub
-      - name: Checkout repository
+      - name: Checkout the files
         uses: actions/checkout@v2
 
-      # 2. Setup Node.js versi 16
-      - name: Set up Node.js
-        uses: actions/setup-node@v2
+      - name: Deploy to Server 1
+        uses: easingthemes/ssh-deploy@main
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+          REMOTE_HOST: ${{ secrets.SSH_HOST }}
+          REMOTE_USER: ${{ secrets.SSH_USERNAME }}
+
+      - name: Executing remote ssh commands using ssh key
+        uses: appleboy/ssh-action@master
         with:
-          node-version: '16'
-
-      # 3. Install dependencies dari package.json
-      - name: Install dependencies
-        run: npm install
-
-      # 4. Build project Vue.js
-      - name: Build project
-        run: npm run build
-
-      # 5. Tambahkan SSH key dari GitHub Secrets ke known hosts
-      - name: Add SSH key to known hosts
-        run: |
-          mkdir -p ~/.ssh
-          ssh-keyscan ${{ secrets.SSH_HOST }} >> ~/.ssh/known_hosts
-
-      # 6. Deploy ke server EC2 menggunakan appleboy/ssh-action
-      - name: Deploy to AWS EC2
-        uses: appleboy/ssh-action@v0.1.4
-        with:
-          host: ${{ secrets.SSH_HOST }} # IP server EC2
-          username: ${{ secrets.SSH_USERNAME }} # user EC2 (misal: ec2-user)
-          key: ${{ secrets.SSH_PRIVATE_KEY }} # private key dari GitHub Secrets
-          port: 22
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USERNAME }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
-            cd /var/www/html/pram.web.id # ganti dengan path project di server
+            cd /var/www/html/pram.web.id
             git pull origin main
             npm install
             npm run build
