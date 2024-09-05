@@ -31,3 +31,4 @@ jobs:
           script: |
             cd /var/www/html/pram.web.id
             git pull
+            echo "hello world"
