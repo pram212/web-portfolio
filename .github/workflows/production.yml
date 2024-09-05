@@ -30,4 +30,5 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
             cd /var/www/html/pram.web.id
-            git pull
+            git config --global --add safe.directory /var/www/html/pram.web.id
+            git pull origin main
