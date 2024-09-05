@@ -31,3 +31,4 @@ jobs:
           script: |
             pwd
             echo "hello pram"
+            sudo su
