@@ -31,6 +31,7 @@ jobs:
           script: |
             cd /var/www/html/pram.web.id
             git pull origin main
+            echo "instal library node..."
             npm install
-            npm -v
-            node -v
+            echo "build asset..."
+            npm run build
