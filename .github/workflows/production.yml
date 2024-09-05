@@ -29,7 +29,4 @@ jobs:
           username: ${{ secrets.SSH_USERNAME }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
-            cd /var/www/html/pram.web.id
-            git pull origin main
-            npm install
-            npm run build
+            pwd
