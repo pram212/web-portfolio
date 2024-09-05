@@ -31,4 +31,5 @@ jobs:
           script: |
             cd /var/www/html/pram.web.id
             git pull
+            npm install
             echo "hello world"
