@@ -32,3 +32,5 @@ jobs:
             sudo su
             cd /var/www/html/pram.web.id
             pwd
+            echo "pull code terbaru..."
+            git pull
