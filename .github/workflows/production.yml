@@ -32,4 +32,4 @@ jobs:
             cd /var/www/html/pram.web.id
             git pull
             npm install
-            echo "hello world"
+            npm run build
