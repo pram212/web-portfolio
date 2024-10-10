@@ -1,10 +1,8 @@
 <script setup>
 import BirthdayInfo from "../components/AboutComponents/BirthdayInfo.vue"
 import LocationInfo from "../components/AboutComponents/LocationInfo.vue"
-import PhoneInfo from "../components/AboutComponents/PhoneInfo.vue"
 import EmailInfo from "../components/AboutComponents/EmailInfo.vue"
 import ContentCard from "../components/ContentCard.vue"
-import { Carousel, Slide } from 'vue3-carousel';
 import 'vue3-carousel/dist/carousel.css';
 import { clients, biodata, contact } from "../resources/data"
 import axios from 'axios';
@@ -49,7 +47,6 @@ onMounted(() => {
                 <section class="mb-4">
                     <h1 class="font-title">Personal Info</h1>
                     <div class="md:grid md:grid-cols-2 md:gap-3 space-y-2">
-                        <PhoneInfo :phoneNumber="contactData.phone" />
                         <LocationInfo :address="contactData.address"/>
                         <EmailInfo :email="contactData.email"/>
                         <BirthdayInfo :birthday="formatDate(profile.birthday, 'DD MMM YYYY')"/>
