@@ -3,6 +3,7 @@ import BirthdayInfo from "../components/AboutComponents/BirthdayInfo.vue"
 import LocationInfo from "../components/AboutComponents/LocationInfo.vue"
 import EmailInfo from "../components/AboutComponents/EmailInfo.vue"
 import ContentCard from "../components/ContentCard.vue"
+import { Carousel, Slide } from 'vue3-carousel';
 import 'vue3-carousel/dist/carousel.css';
 import { clients, biodata, contact } from "../resources/data"
 import axios from 'axios';
