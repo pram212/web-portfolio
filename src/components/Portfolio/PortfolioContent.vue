@@ -7,6 +7,8 @@ import { Carousel, Slide } from "vue3-carousel";
 import "vue3-carousel/dist/carousel.css";
 import ContentCard from "../ContentCard.vue";
 
+await new Promise(resolve => setTimeout(resolve, 500))
+
 const axios = inject("axios");
 
 const portfolios = ref(null);
