@@ -46,7 +46,7 @@ import Link from './Link.vue';
                     Work
                     </Link>
                 </li>
-                <li>
+                <!-- <li>
                     <Link to="/contact">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                         stroke="currentColor" class="size-6">
@@ -55,7 +55,7 @@ import Link from './Link.vue';
                     </svg>
                     Contact
                     </Link>
-                </li>
+                </li> -->
                 <li>
                     <label class="swap swap-rotate bg-error rounded-full p-2">
                         <!-- this hidden checkbox controls the state -->

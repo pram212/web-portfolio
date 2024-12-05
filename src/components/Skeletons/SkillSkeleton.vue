@@ -1,12 +1,4 @@
 <script setup>
-import ProgressBar from "../Progress.vue"
-import { onMounted, ref, inject } from 'vue';
-const axios = inject('axios')
-
-const skills = ref(null)
-const res = await axios.get('/skills')
-skills.value = await res.data
-
 </script>
 
 <template>
@@ -21,8 +13,12 @@ skills.value = await res.data
             <span>Skill</span>
         </h1>
         <ul>
-            <li v-for="(item, index) in skills" :key="index">
-                <ProgressBar :title="item.name" :value="item.presentage" />
+            <li class="mb-3" v-for="(item, index) in 7" :key="index">
+                <div class="flex justify-between">
+                    <div class="skeleton h-5 w-32 mb-2"></div>
+                    <div class="w-10 h-5 skeleton"></div>
+                </div>
+                <div class="skeleton h-4"></div>
             </li>
         </ul>
     </div>

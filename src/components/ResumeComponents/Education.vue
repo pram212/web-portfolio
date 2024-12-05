@@ -1,18 +1,12 @@
 <script setup>
-import axios from 'axios';
-import { onMounted, ref } from 'vue';
-import { educations } from "../../resources/data";
+import { onMounted, ref, inject } from 'vue';
+const axios = inject('axios')
 
-const data = ref(educations);
+// await new Promise(resolve => setTimeout(resolve, 3000))
 
-onMounted(() => {
-    if (import.meta.env.VITE_USE_SERVICE=='TRUE') {
-        const apiBaseUrl = import.meta.env.VITE_APP_API_URL
-        axios.get(`${apiBaseUrl}/educations`)
-            .then((response) => data.value = response.data )
-            .catch( (error) => console.log('gagal fetch data education: ', error) )
-    }
-})
+const educations = ref(null)
+const res = await axios.get("/educations")
+educations.value = await res.data
 
 </script>
 
@@ -27,10 +21,11 @@ onMounted(() => {
             <h2>Education</h2>
         </div>
         <!-- List -->
-        <div class=" dark:border-neutral-700 dark:border-2 rounded-md p-4 mt-3 mb-5 max-h-fit" v-for="(item, index) in data" :key="index">
+        <div class=" dark:border-neutral-700 dark:border-2 rounded-md p-4 mt-3 mb-5 max-h-fit" v-for="(item, index) in educations" :key="index">
             <p class="text-gray-500 dark:text-gray-500 font-semibold">{{ item.start }} - {{ item.end }}</p>
             <p class="text-title-md my-1">{{ item.title }}</p>
             <p class="text-title-sm">{{ item.institution }}</p>
         </div>
+    
     </div>
 </template>

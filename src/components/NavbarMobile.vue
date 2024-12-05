@@ -25,9 +25,9 @@
                         </label>
                     </li>
                     <li @click.prevent="$emit('sidebarToggle')">
-                        <label for="memek" class="btn btn-circle swap swap-rotate bg-error border-none p-1">
+                        <label for="toggle-mobile" class="btn btn-circle swap swap-rotate bg-error border-none p-1">
                             <!-- this hidden checkbox controls the state -->
-                            <input type="checkbox" id="memek"/>
+                            <input type="checkbox" id="toggle-mobile"/>
 
                             <!-- hamburger icon -->
                             <svg class="swap-off h-7 w-7 fill-current" xmlns="http://www.w3.org/2000/svg"

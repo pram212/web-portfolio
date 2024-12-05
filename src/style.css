@@ -12,6 +12,10 @@
         background-image: url('/bg-dark.jpg')
     }
 
+    .skeleton {
+        @apply bg-red-400 dark:bg-gray-700;
+    }
+
     .btn-primary {
         @apply border-none bg-white dark:bg-neutral-600 text-black dark:text-white hover:bg-gradient-to-r from-[#FA5252] to-[#DD2476] font-medium;
     }
@@ -21,10 +25,10 @@
     }
 
     .text-title-md {
-        @apply text-black dark:text-white text-xl font-semibold
+        @apply text-black dark:text-white text-lg font-semibold
     }
     .text-title-sm {
-        @apply text-black dark:text-white md:text-lg
+        @apply text-black dark:text-white
     }
 
     .font-brand {
