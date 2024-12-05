@@ -2,7 +2,7 @@
 import { onMounted, ref, inject } from 'vue';
 const axios = inject('axios')
 
-// await new Promise(resolve => setTimeout(resolve, 3000))
+await new Promise(resolve => setTimeout(resolve, 1000))
 
 const educations = ref(null)
 const res = await axios.get("/educations")
