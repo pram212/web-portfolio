@@ -101,9 +101,9 @@ const dateConvert = (dateString, ifNoDate = "Present") => {
             <span class="font-semibold">Client</span> :
             <span>{{ detail.client }}</span>
           </p>
-          <p class="capitalize text-title">
+          <p class="text-title">
             <span class="font-semibold">Demo</span> :
-            <span>{{ detail.demo?.url }}</span>
+            <a target="_blank" :href="detail.demo?.url">{{ detail.demo?.url }}</a>
           </p>
         </div>
       </div>
