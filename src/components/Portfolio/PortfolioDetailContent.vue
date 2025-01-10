@@ -71,7 +71,7 @@ portfolio.value = await response.data;
               <span class="font-semibold">Tech Stack</span>
               :
               <ul class="list-disc">
-                <li v-for="(item, index) in portfolio.tech" :key="index">
+                <li v-for="(item, index) in portfolio.tech" :key="index" class="uppercase">
                   {{ item }}
                 </li>
               </ul>
@@ -80,7 +80,7 @@ portfolio.value = await response.data;
             <p class="text-title">
               <span class="font-semibold">Modules</span>
               <ul class="list-disc">
-                <li v-for="(item, index) in portfolio.modules" :key="index">
+                <li v-for="(item, index) in portfolio.modules" :key="index" class="uppercase">
                   {{ item }}
                 </li>
               </ul>  
