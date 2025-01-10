@@ -61,7 +61,7 @@ portfolio.value = await response.data;
         <div class="divider divider-error"></div>
     
         <div class="text-title capitalize my-4">
-          <p class="text-title mb-4" v-html="portfolio.description"></p>
+          <p class="text-title mb-4 prose" v-html="portfolio.description"></p>
         </div>
 
         <div class="divider divider-error"></div>
