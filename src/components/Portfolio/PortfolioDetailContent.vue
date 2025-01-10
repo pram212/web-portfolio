@@ -24,7 +24,22 @@ portfolio.value = await response.data;
           </h3>
         </div>
         <div class="divider divider-error"></div>
-        <div>
+        <figure class="bg-neutral-700">
+          <Carousel
+            :autoplay="5000"
+            :items-to-show="1"
+            :wrap-around="true"
+            class="mb-10"
+          >
+            <Slide v-for="(item, index) in portfolio.images" :key="index">
+              <div class="carousel__item">
+                <img :src="item" alt="" class="h-72 mx-auto" />
+              </div>
+            </Slide>
+          </Carousel>
+        </figure>
+
+        <div class="mt-4">
           <p class="capitalize text-title">
               <span class="font-semibold">Type</span> :
               <span>{{ portfolio.type }}</span>
@@ -43,23 +58,7 @@ portfolio.value = await response.data;
             </p>
         </div>
     
-        <figure class="bg-neutral-700">
-          <Carousel
-            :autoplay="5000"
-            :items-to-show="1"
-            :wrap-around="true"
-            class="mb-10"
-          >
-            <Slide v-for="(item, index) in portfolio.images" :key="index">
-              <div class="carousel__item">
-                <img :src="item" alt="" class="h-72 mx-auto" />
-              </div>
-            </Slide>
-          </Carousel>
-        </figure>
-    
         <div class="text-title capitalize my-4">
-          <span class="font-semibold">Description</span> :
           <p class="text-title mb-4" v-html="portfolio.description"></p>
         </div>
     
