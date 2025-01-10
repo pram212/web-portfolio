@@ -11,7 +11,7 @@ export default {
     extend: {},
   },
   plugins: [
-    require('daisyui'), require('tailwindcss-animated'),
+    require('daisyui'), require('tailwindcss-animated'), require('@tailwindcss/typography')
   ],
   darkMode: 'class',
   daisyui: {
