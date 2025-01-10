@@ -6,6 +6,7 @@ import ContactVue from "../views/Contact.vue";
 import PortfolioVue from "../views/Portfolio.vue";
 import ResumeVue from "../views/Resume.vue";
 import PageNotFound from "../views/errors/404.vue"
+import PortfolioDetailVue from "../views/PortfolioDetail.vue";
 
 const routes = [
   { path: "/", name: "home", component: HomeVue },
@@ -13,6 +14,7 @@ const routes = [
   { path: "/resume", name: "resume", component: ResumeVue },
   { path: "/contact", name: "contact", component: ContactVue },
   { path: "/portfolio", name: "portfolio", component: PortfolioVue },
+  { path: "/portfolio/:id", name: "portfolio-detail", component: PortfolioDetailVue },
   { path: '/:pathMatch(.*)*', component: PageNotFound },
 ];
 

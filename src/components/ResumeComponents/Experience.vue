@@ -2,7 +2,7 @@
 import { onMounted, ref, inject } from 'vue';
 import { formatDate } from '../../helpers';
 
-await new Promise(resolve => setTimeout(resolve, 500))
+// await new Promise(resolve => setTimeout(resolve, 500))
 
 const axios = inject('axios')
 

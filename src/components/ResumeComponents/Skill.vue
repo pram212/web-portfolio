@@ -1,7 +1,7 @@
 <script setup>
 import ProgressBar from "../Progress.vue"
 import { onMounted, ref, inject } from 'vue';
-await new Promise(resolve => setTimeout(resolve, 500))
+// await new Promise(resolve => setTimeout(resolve, 500))
 
 const axios = inject('axios')
 

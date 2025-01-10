@@ -1,7 +1,7 @@
 <script setup>
 import { onMounted, ref, inject } from "vue";
 
-await new Promise(resolve => setTimeout(resolve, 500))
+// await new Promise(resolve => setTimeout(resolve, 500))
 
 // instance axios setup from main
 const axios = inject("axios")
