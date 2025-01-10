@@ -61,7 +61,7 @@ portfolio.value = await response.data;
         <div class="divider divider-error"></div>
     
         <div class="my-4 w-full">
-          <p class="text-black dark:text-white mb-4 prose prose-sm max-w-none prose-strong:text-black dark:prose-strong:text-white space-y-2" v-html="portfolio.description"></p>
+          <p class="text-black dark:text-white mb-4 prose prose-sm max-w-none prose-strong:text-black dark:prose-strong:text-white space-y-2 prose-ol:ml-5" v-html="portfolio.description"></p>
         </div>
 
         <!-- <div class="divider divider-error"></div> -->
