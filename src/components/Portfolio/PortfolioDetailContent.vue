@@ -24,24 +24,23 @@ portfolio.value = await response.data;
           </h3>
         </div>
         <div class="divider divider-error"></div>
-    
-        <div class="md:grid md:grid-cols-3 mx-auto mb-4 gap-2 text-title">
-        <p class="capitalize text-title">
-            <span class="font-semibold">Type</span> :
-            <span>{{ portfolio.type }}</span>
-          </p>
+        <div>
           <p class="capitalize text-title">
-            <span class="font-semibold">Date</span> :
-            <span>
-                {{ formatDate(portfolio.start) }} - {{ formatDate(portfolio.end) }}</span
-            >
-          </p>
-          <p class="text-title">
-            <span class="font-semibold">Demo</span> :
-            <a target="_blank" :href="portfolio.demo?.url">{{
-              portfolio.demo?.url
-            }}</a>
-        </p>
+              <span class="font-semibold">Type</span> :
+              <span>{{ portfolio.type }}</span>
+            </p>
+            <p class="capitalize text-title">
+              <span class="font-semibold">Date</span> :
+              <span>
+                  {{ formatDate(portfolio.start) }} - {{ formatDate(portfolio.end) }}</span
+              >
+            </p>
+            <p class="text-title" v-if="portfolio.demo">
+              <span class="font-semibold">Demo</span> :
+              <a target="_blank" :href="portfolio.demo?.url">{{
+                portfolio.demo?.url
+              }}</a>
+            </p>
         </div>
     
         <figure class="bg-neutral-700">
