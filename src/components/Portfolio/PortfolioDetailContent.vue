@@ -68,7 +68,7 @@ portfolio.value = await response.data;
     
         <div class="lg:grid grid-cols-2">
             <p class="capitalize text-title">
-              <span class="font-semibold">Tech</span>
+              <span class="font-semibold">Tech Stack</span>
               :
               <ul class="list-disc">
                 <li v-for="(item, index) in portfolio.tech" :key="index">
