@@ -57,10 +57,14 @@ portfolio.value = await response.data;
               }}</a>
             </p>
         </div>
+
+        <div class="divider divider-error"></div>
     
         <div class="text-title capitalize my-4">
           <p class="text-title mb-4" v-html="portfolio.description"></p>
         </div>
+
+        <div class="divider divider-error"></div>
     
         <div class="lg:grid grid-cols-2">
             <p class="capitalize text-title">
