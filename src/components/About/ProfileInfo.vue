@@ -32,11 +32,10 @@ contact.value = await fetchContact.data
                 <p class="text-muted md:leading-7" v-html="profile.summary"></p>
             </section>
             <section class="mb-4">
-                <h1 class="font-title">Personal Info</h1>
-                <div class="md:grid md:grid-cols-2 md:gap-3 space-y-2">
+                <h1 class="font-title">Contact</h1>
+                <div class="md:grid md:grid-cols-2 md:gap-3">
                     <LocationInfo :address="contact.address"/>
                     <EmailInfo :email="contact.email"/>
-                    <BirthdayInfo :birthday="formatDate(profile.birthday, 'DD MMM YYYY')"/>
                 </div>
             </section>
         </div>
