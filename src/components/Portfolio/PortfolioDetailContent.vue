@@ -67,7 +67,7 @@ portfolio.value = await response.data;
         <div class="divider divider-error"></div>
     
         <div class="lg:grid grid-cols-2">
-            <p class="capitalize text-title">
+            <p class="text-title">
               <span class="font-semibold">Tech Stack</span>
               :
               <ul class="list-disc">
@@ -77,7 +77,7 @@ portfolio.value = await response.data;
               </ul>
             </p>
         
-            <p class="capitalize text-title">
+            <p class="text-title">
               <span class="font-semibold">Modules</span>
               <ul class="list-disc">
                 <li v-for="(item, index) in portfolio.modules" :key="index">
