@@ -64,9 +64,9 @@ portfolio.value = await response.data;
           <p class="text-black dark:text-white mb-4 prose prose-sm max-w-none prose-strong:text-black dark:prose-strong:text-white space-y-2" v-html="portfolio.description"></p>
         </div>
 
-        <div class="divider divider-error"></div>
+        <!-- <div class="divider divider-error"></div> -->
     
-        <div class="lg:grid grid-cols-2">
+        <!-- <div class="lg:grid grid-cols-2">
             <p class="text-title">
               <span class="font-semibold">Tech Stack</span>
               :
@@ -85,6 +85,6 @@ portfolio.value = await response.data;
                 </li>
               </ul>  
             </p>
-        </div>
+        </div> -->
     </div>
 </template>
