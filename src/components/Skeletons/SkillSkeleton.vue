@@ -12,14 +12,15 @@
             </svg>
             <span>Skill</span>
         </h1>
-        <ul>
-            <li class="mb-3" v-for="(item, index) in 7" :key="index">
-                <div class="flex justify-between">
-                    <div class="skeleton h-5 w-32 mb-2"></div>
-                    <div class="w-10 h-5 skeleton"></div>
-                </div>
-                <div class="skeleton h-4"></div>
-            </li>
-        </ul>
+        <div class="md:grid md:grid-cols-3 md:gap-3">
+            <div v-for="(item, index) in 4" :key="index">
+                <h1 class="skeleton h-6 w-full mb-2"></h1>
+                <ul>
+                    <li  class="mb-2 skeleton h-4 w-full"></li>
+                    <li  class="mb-2 skeleton h-4 w-full"></li>
+                    <li  class="mb-2 skeleton h-4 w-full"></li>
+                </ul>
+            </div>
+        </div>
     </div>
 </template>

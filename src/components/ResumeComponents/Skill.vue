@@ -9,6 +9,13 @@ const skills = ref(null)
 const res = await axios.get('/skills')
 skills.value = await res.data
 
+const dynamicBadgeColor = (level) => {
+    if (level === 'advance') return 'badge-success'
+    if (level === 'experience') return 'badge-warning'
+    if (level === 'basic') return 'badge-error'
+    else return 'badge-primary'
+}
+
 </script>
 
 <template>
@@ -22,10 +29,17 @@ skills.value = await res.data
             </svg>
             <span>Skill</span>
         </h1>
-        <ul>
-            <li v-for="(item, index) in skills" :key="index">
-                <ProgressBar :title="item.name" :value="item.presentage" />
-            </li>
-        </ul>
+        <div class="divider divider-error"></div>
+        <div class="md:grid md:grid-cols-4 md:gap-y-4">
+            <div v-for="(item, index) in skills" :key="index" class="text-black dark:text-white">
+                <h1 class="uppercase font-semibold">{{ index }}</h1>
+                <ul class="list-[square] pl-5">
+                    <li v-for="(data, i) in item" :key="i" class="mb-2">
+                        <span class="mr-3">{{ data.name }}</span>
+                        <span class="badge capitalize" :class="dynamicBadgeColor(data.level)">{{ data.level }}</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
 </template>

@@ -36,15 +36,13 @@ import SkillSkeletonVue from "../components/Skeletons/SkillSkeleton.vue"
             </Suspense>
 
         </section>
-        <section class="md:grid md:grid-cols-2 md:gap-x-3 pt-6">
+        <section class="pt-6">
             <Suspense>
                 <Skill/>
                 <template #fallback>
                     <SkillSkeletonVue/>
                 </template>
             </Suspense>
-            
-            <Knowledge></Knowledge>
         </section>
     </ContentCard>
 </template>
