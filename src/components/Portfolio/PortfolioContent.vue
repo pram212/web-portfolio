@@ -15,13 +15,13 @@ portfolios.value = await response.data;
 
 <template>
   <ContentCard title="Portfolio">
-    <div class="md:grid md:grid-cols-3 md:gap-4">
+    <div class="md:grid md:grid-cols-3 md:gap-4 space-y-3 md:space-y-0">
       <div
-        class="card card-compact bg-transparent dark:bg-base-300 w-full shadow-xl"
+        class="card bg-transparent dark:bg-base-300 w-full shadow-xl"
         v-for="(item, index) in portfolios"
         :key="index"
       >
-        <figure>
+        <figure class="h-36 overflow-hidden">
           <img
             :src="
               Array.isArray(item.images)
@@ -33,7 +33,9 @@ portfolios.value = await response.data;
         </figure>
         <div class="card-body">
           <h2 class="card-title text-title">{{ item.name }}</h2>
-          <p class="text-title">{{ item.type }}</p>
+          <p class="text-title text-wrap">
+            {{ item.type }}
+          </p>
           <div class="card-actions justify-end">
             <router-link
               :to="'portfolio/' + item.id"
