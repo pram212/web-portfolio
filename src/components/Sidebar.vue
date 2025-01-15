@@ -51,9 +51,9 @@ const menus = [
 </script>
 
 <template>
-    <ul class="menu menu-vertical items-start bg-white dark:bg-black min-h-full w-full p-4 space-y-1">
+    <ul class="menu menu-vertical items-start bg-white dark:bg-black min-h-full w-[80%] p-4 space-y-1">
         <li class="w-full" v-for="(menu, index) in menus" :key="index">
-            <Link :to="menu.url" class="flex justify-start">
+            <Link :to="menu.url" class="flex justify-start" @click="$emit('sidebar-toggle')">
                 <span v-html="menu.icon"></span>
                 {{ menu.name }}
             </Link>
