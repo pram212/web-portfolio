@@ -15,6 +15,7 @@ links.value = await fetchLink.data;
 <template>
   <div class="flex justify-center space-x-5 mb-7">
     <a
+      target="_blank"
       v-for="(item, index) in links"
       :key="index"
       :href="item.url"
