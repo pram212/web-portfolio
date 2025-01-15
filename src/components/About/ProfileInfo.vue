@@ -33,7 +33,7 @@ contact.value = await fetchContact.data
             </section>
             <section class="mb-4">
                 <h1 class="font-title">Contact</h1>
-                <div class="md:grid md:grid-cols-2 md:gap-3">
+                <div class="lg:grid lg:grid-cols-2 space-y-3 lg:space-y-0">
                     <LocationInfo :address="contact.address"/>
                     <EmailInfo :email="contact.email"/>
                 </div>

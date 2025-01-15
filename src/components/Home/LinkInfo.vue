@@ -20,7 +20,7 @@ links.value = await fetchLink.data;
       :href="item.url"
       class="bg-transparent dark:bg-neutral-800 p-[10px] rounded-md hover:btn-primary"
     >
-      <svg class="h-6 w-6" v-html="item.svg"></svg>
+      <svg class="h-8 w-8" v-html="item.svg"></svg>
     </a>
   </div>
 </template>
