@@ -21,7 +21,7 @@ biodata.value = await fetchLink.data;
     <h3
       class="mt-4 mb-1 text-3xl font-semibold text-gray-900 dark:text-white capitalize"
     >
-      {{ biodata.name }} {{ biodata.degree }}
+      {{ biodata.name }}
     </h3>
     <p class="mb-4 text-muted text-lg">{{ biodata.title }}</p>
   </div>
