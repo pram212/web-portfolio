@@ -30,7 +30,7 @@ const dynamicBadgeColor = (level) => {
             <span>Skill</span>
         </h1>
         <div class="divider divider-error"></div>
-        <div class="md:grid md:grid-cols-4 md:gap-y-4">
+        <div class="md:grid md:grid-cols-3 md:gap-y-4">
             <div v-for="(item, index) in skills" :key="index" class="text-black dark:text-white">
                 <h1 class="uppercase font-semibold">{{ index }}</h1>
                 <ul class="list-[square] pl-5">
