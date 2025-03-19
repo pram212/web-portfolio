@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "project_title": "Al-Amin Project",
+    "start": "14/2/2022",
+    "end": "15/6/2023",
+    "description": "<p>Al-Amin project merupakan aplikasi berbasis web untuk mengelola data perusahaan internal asuransi syariah. Aplikasi ini dirancang untuk meningkatkan performa aplikasi yang sudah ada yang dibuat dengan arsitektur <em>monolith</em>. Aplikasi ini dibuat berdasarkan permintaan untuk proses migrasi dari teknologi PHP Native ke Laravel. Proyek ini saya kerjakan saat bekerja di PT Mandala Dwipantara Proteksi sebagai Software Engineer dan dikerjakan secara tim sebanyak 2 orang. Di sini saya bertanggungjawab untuk mengembangkan aplikasi dengan coding dan juga berkoordinasi dengan klien terkait requirement fitur. </p><ul><li>Teknologi : Laravel, PHP, Vue.js</li><li>Database : Mysql</li><li>Fitur : </li></ul><ol><li class=\"ql-indent-1\">Manajemen Summary Of Commision, Manajemen Polis, </li><li class=\"ql-indent-1\">Manajemen Kepesertaan, Data Master, </li><li class=\"ql-indent-1\">Authentication, </li><li class=\"ql-indent-1\">Role Base Access Contrrol</li></ol><p><br></p>",
+    "created_at": null,
+    "updated_at": "19/3/2025 15:57:44",
+    "images": "[\"/portfolios/ULYUgTYDWPn0mcJaX2vvPerjMi74jIvaZnblGm7M.png\", \"/portfolios/3QsL1YRzBf8nJl76XhDaJ8gdyCB72HkzEP7ToVXd.png\"]",
+    "type": "web Application",
+    "client": null
+  },
+  {
+    "id": 4,
+    "project_title": "AKUI Nasre",
+    "start": "1/5/2022",
+    "end": "30/7/2023",
+    "description": "<p>AKUI Nasre merupakan aplikasi berbasis web untuk mengelola data  akuntansi dan keuangan perusahaan internal asuransi. Aplikasi ini dirancang untuk lebih mempermudah pengguna dalam mengelola data dari basis dekstop ke basis web dengan arsitektur&nbsp;<em>monolith</em>. Proyek ini saya kerjakan saat bekerja di PT Mandala Dwipantara Proteksi sebagai Software Engineer dan dikerjakan secara tim sebanyak 2 orang. Di sini saya bertanggungjawab untuk mengembangkan aplikasi dengan coding dan juga berkoordinasi dengan klien terkait requirement fitur.</p><ul><li>Teknologi : Laravel, PHP, Bootstrap, Jquery</li><li>Database : Mysql</li><li>Fitur :</li></ul><ol><li class=\"ql-indent-1\">Akuntansi</li><li class=\"ql-indent-1\">Manajemen Keuangan</li><li class=\"ql-indent-1\">Manajemen Investasi</li><li class=\"ql-indent-1\">Laporan</li></ol><p><br></p>",
+    "created_at": "19/3/2025 15:10:07",
+    "updated_at": "19/3/2025 15:10:07",
+    "images": "[\"/portfolios/GYg1rSxwSzi1T6ijqL6tkuhmo6d0P8QmmeCo7y6R.png\", \"/portfolios/szUrbuTWmzHKJFMcopGH3Xbzx6dTlgKJHp40GaDr.png\"]",
+    "type": "Web Application",
+    "client": null
+  },
+  {
+    "id": 5,
+    "project_title": "Digital banking Support System",
+    "start": "1/10/2023",
+    "end": "30/9/2024",
+    "description": "<p>Saya mengembangkan Sistem Dukungan Perbankan Digital sebagai solusi ERP untuk kebutuhan internal bank. Sistem ini dirancang untuk mendukung berbagai fungsi operasional internal, termasuk manajemen data karyawan, proses administratif, dan analisis kinerja. Dengan fokus pada integrasi yang lancar dengan sistem yang ada, saya menerapkan fitur-fitur seperti pemantauan aktivitas, pelaporan kinerja, dan manajemen dokumen, yang bertujuan untuk meningkatkan efisiensi dan produktivitas karyawan. Proyek ini melibatkan desain sistem yang kuat, pengembangan modul-modul utama, dan implementasi protokol keamanan untuk melindungi data sensitif. Sistem ini membantu bank mengelola operasi internalnya secara lebih efektif dan efisien. Saya mengembangkan proyek ini saat bekerja di PT Melkhior Teknologi.</p><ul><li>Teknologi : PHP, Javascript, Jquery, Bootsrap, CSS</li><li>Database : Mysql</li><li>Fitur :</li></ul><ol><li class=\"ql-indent-1\">Monitoring Manajemen</li><li class=\"ql-indent-1\">Daily Operasional</li><li class=\"ql-indent-1\">Management TV Content</li><li class=\"ql-indent-1\">Program Marketing</li></ol>",
+    "created_at": "19/3/2025 15:48:33",
+    "updated_at": "19/3/2025 16:09:58",
+    "images": "[\"/portfolios/9ySyMdDy0hONZ8jd8B9v9hRPJpNfRmzPRcqENrkJ.png\", \"/portfolios/erkiO54vP1OyYlZCYdiTOT9NAEmX7yfgx6bAalGs.png\", \"/portfolios/dfq8Nqk6L23Us3x8VBC0sx6Gxk6c9sMc7QmZKsyp.png\", \"/portfolios/ldF93C6TyxvtfHakSiTqK9scbZ0yTAovOMOQ01pv.png\"]",
+    "type": "Web Aplication",
+    "client": null
+  },
+  {
+    "id": 6,
+    "project_title": "Election Recap App",
+    "start": "1/1/2023",
+    "end": "28/2/2023",
+    "description": "<p>Election Recap App merupakan proyek freelance dengan seorang timsukses salah satu paslon pilpres 2024. Saya mengembangkan aplikasi web ini untuk penghitungan suara dalam pemilihan presiden 2024, yang digunakan oleh saksi partai untuk pemantauan internal. Aplikasi ini dirancang untuk memfasilitasi pengumpulan dan penghitungan suara secara real-time, menyediakan alat yang efektif bagi saksi partai untuk memantau dan menganalisis hasil pemilu. Dalam proyek ini, saya bertanggung jawab untuk mengembangkan fitur-fitur utama seperti input data suara, pelaporan hasil, dan integrasi sistem untuk memastikan keakuratan dan keamanan data. Aplikasi ini memungkinkan saksi partai untuk memverifikasi dan memantau hasil pemilu secara efisien.</p><ul><li>Teknologi : PHP, Laravel, Jquery, Bootsrap</li><li>Databsae : Mysql</li><li>Fitur :</li></ul><ol><li class=\"ql-indent-1\">Master TPS</li><li class=\"ql-indent-1\">Master Saksi</li><li class=\"ql-indent-1\">Master Lokasi</li><li class=\"ql-indent-1\">Master Calon</li><li class=\"ql-indent-1\">Rekapan Suara</li><li class=\"ql-indent-1\">Dashboard (Statistik)</li><li class=\"ql-indent-1\">Authentication</li><li class=\"ql-indent-1\">Role-base access control</li></ol>",
+    "created_at": "19/3/2025 16:09:18",
+    "updated_at": "19/3/2025 16:09:18",
+    "images": "[\"/portfolios/vWkxIvDvjYaoZScnfVSnhGrlnFlWtaeVLmHqHVzm.png\", \"/portfolios/ZYxqGrVFTCRpYYVUxbwwMHtSkKzKcPSaht8VZ5SR.png\"]",
+    "type": "web application",
+    "client": null
+  },
+  {
+    "id": 7,
+    "project_title": "POS Jewerly Store",
+    "start": "2/11/2023",
+    "end": "20/7/2024",
+    "description": "<p>POS Jewerly Store adalah aplikasi berbasis web point of sales untuk memudahkan pengelolaan bisnis pada toko emas. Aplikasi ini dibuat dengan arsitektur monolith dengan laravel 6. proyek ini saya kerjakan saat saya bekerja di PT Melkhior Teknologi sebagai fullstack developer. Saya bertanggung jwaba untuk menambah fitur, memperbaiki bugs, dan mendeploy aplikasi ke server. Dalam proyek ini saya hanya sekedar support, tidak difokuskan untuk develop secara intens. </p><ul><li>Teknologi : PHP, Laravel, Bootstrap, Jquery</li><li>Database : Mysql</li><li>Fitur : </li></ul><ol><li class=\"ql-indent-1\">Penjualan</li><li class=\"ql-indent-1\">Pembelian</li><li class=\"ql-indent-1\">Dashoard</li><li class=\"ql-indent-1\">Authentication</li><li class=\"ql-indent-1\">Role-base access control</li><li class=\"ql-indent-1\">Data master</li><li class=\"ql-indent-1\">Manajemen Produk</li><li class=\"ql-indent-1\">Manajemen Biaya</li><li class=\"ql-indent-1\">Transfer</li><li class=\"ql-indent-1\">Quotation</li><li class=\"ql-indent-1\">Pengembalian (Return)</li><li class=\"ql-indent-1\">Akuntansi</li><li class=\"ql-indent-1\">HRM</li><li class=\"ql-indent-1\">Laporan</li><li class=\"ql-indent-1\">Setting</li></ol>",
+    "created_at": "19/3/2025 16:19:36",
+    "updated_at": "19/3/2025 16:19:36",
+    "images": "[\"/portfolios/OlZKFRSQoyElUZ2A2C04jGKyiCe2LJfXpJDS020S.png\", \"/portfolios/HyshOw2ckR7GctCeR9TMgVlnluPkrKlCdYqcpy01.png\", \"/portfolios/MeBHBY4svt7qxwI3KOUWuTqqDtFXYaqjBxv04tOj.png\"]",
+    "type": "Web application",
+    "client": null
+  }
+]

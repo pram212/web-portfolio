@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "company": "PT DesaTech Nusantara",
+    "start": "1/1/2020",
+    "end": "20/10/2021",
+    "position": "Technical Writer",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 2,
+    "company": "PT Mandala Dwipantara",
+    "start": "14/2/2022",
+    "end": "17/8/2022",
+    "position": "Software Engineer",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 3,
+    "company": "PT Melkhior Teknologi",
+    "start": "11/9/2022",
+    "end": null,
+    "position": "Fullstack Developer",
+    "created_at": null,
+    "updated_at": null
+  }
+]
