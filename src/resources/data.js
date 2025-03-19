@@ -5,7 +5,7 @@ export const biodata = {
     birthday: 'September 16, 1994',
     photo: '/foto.jpg',
     photo2: '/foto-2.jpg',
-    summary: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa exercitationem eos enim totam voluptate quos quaerat minus, illo error asperiores esse similique illum veniam laboriosam! Illo alias ratione facere quia.'
+    summary: 'Saya adalah Fullstack Developer dengan lebih dari 2 tahun pengalaman dalam membangun aplikasi web menggunakan Laravel, Vue.js, dan teknologi modern lainnya. Saya telah berkontribusi dalam pengembangan berbagai sistem, mulai dari aplikasi keuangan, sistem informasi, hingga solusi POS, dengan prioritas pada keamanan, performa tinggi, dan kemudahan penggunaan. Keahlian saya dalam mengelola deployment di VPS Ubuntu dan AWS Cloud memastikan setiap solusi yang saya kembangkan dapat diimplementasikan secara optimal sesuai kebutuhan bisnis'
 }
 
 export const contact = {
@@ -14,11 +14,23 @@ export const contact = {
     email: 'pramono6236@gmail.com',
 }
 
-export const socialMedia = {
-    linkedin : 'https://www.linkedin.com/in/pramono-82a0721b9/',
-    github : 'https://github.com/pram212',
-    facebook: ''
-}
+export const socialMedia = [
+    { 
+        name: "github",
+        url: "https://github.com/pram212",
+        svg: `/icons/github-142-svgrepo-com.svg`
+    },
+    {
+        name: "gitlab",
+        url: "https://gitlab.com/pramono6236",
+        svg: `/icons/gitlab-svgrepo-com.svg`
+    },
+    {
+        name: "linkedin",
+        url: "https://www.linkedin.com/in/pramono-82a0721b9/",
+        svg: `/icons/linkedin-svgrepo-com.svg`
+    }
+]
 
 export const educations = [
     {

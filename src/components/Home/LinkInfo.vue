@@ -1,5 +1,6 @@
 <script setup>
 import { onMounted, ref, inject } from "vue";
+import { socialMedia } from "../../resources/data";
 
 // await new Promise(resolve => setTimeout(resolve, 500))
 
@@ -7,8 +8,14 @@ import { onMounted, ref, inject } from "vue";
 const axios = inject("axios")
 
 const links = ref(null);
-const fetchLink = await axios.get("/links");
-links.value = await fetchLink.data;
+
+if (import.meta.env.VITE_USE_SERVICE) {
+  console.log("aktif");
+  const fetchLink = await axios.get("/links");
+  links.value = await fetchLink.data;
+} else {
+  links.value = socialMedia
+}
 
 </script>
 
@@ -21,7 +28,8 @@ links.value = await fetchLink.data;
       :href="item.url"
       class="bg-transparent dark:bg-neutral-800 p-[10px] rounded-md hover:btn-primary"
     >
-      <svg class="h-8 w-8" v-html="item.svg"></svg>
+      <img :src="item.svg" class="h-8 w-8" alt="">
+      <!-- <svg class="h-8 w-8" v-html="item.svg"></svg> -->
     </a>
   </div>
 </template>
