@@ -1,18 +1,26 @@
 <script setup>
 import ContentCard from "../ContentCard.vue";
 import { Carousel, Slide } from "vue3-carousel";
-import { ref, inject, onMounted } from "vue";
+import { ref, inject, onMounted, computed } from "vue";
 import "vue3-carousel/dist/carousel.css";
 import { formatDate } from "../../helpers";
 import { useRoute } from "vue-router";
 import moment from "moment";
-
-const axios = inject("axios");
-const portfolio = ref(null);
+import portfolios from "../../resources/datas/portfolios.json"
 const route = useRoute();
+const portfolio = computed(() => {
+  return portfolios.find(p => p.id === parseInt(route.params.id));
+})
 
-const response = await axios.get(`/portfolios/${route.params.id}`);
-portfolio.value = await response.data;
+console.log(portfolio.value)
+
+// const axios = inject("axios");
+// const portfolio = ref(null);
+// const route = useRoute();
+
+// const response = await axios.get(`/portfolios/${route.params.id}`);
+// portfolio.value = await response.data;
+
 
 </script>
 
@@ -20,20 +28,20 @@ portfolio.value = await response.data;
     <div>
         <div class="flex items-center">
           <h3 class="text-lg font-bold text-red-500 mx-auto">
-            {{ portfolio.name }}
+            {{ portfolio.project_title }}
           </h3>
         </div>
         <div class="divider divider-error"></div>
         <figure class="bg-neutral-700">
           <Carousel
-            :autoplay="5000"
+            :autoplay="3000"
             :items-to-show="1"
             :wrap-around="true"
             class="mb-10"
           >
-            <Slide v-for="(item, index) in portfolio.images" :key="index">
+            <Slide v-for="(item, index) in JSON.parse(portfolio.images)" :key="index">
               <div class="carousel__item">
-                <img :src="item" alt="" class="h-72 mx-auto" />
+                <img :src="item" alt="" class="h-96 mx-auto" />
               </div>
             </Slide>
           </Carousel>
@@ -63,28 +71,5 @@ portfolio.value = await response.data;
         <div class="my-4 w-full">
           <p class="text-black dark:text-white mb-4 prose prose-sm max-w-none prose-strong:text-black dark:prose-strong:text-white space-y-2 prose-ol:ml-5" v-html="portfolio.description"></p>
         </div>
-
-        <!-- <div class="divider divider-error"></div> -->
-    
-        <!-- <div class="lg:grid grid-cols-2">
-            <p class="text-title">
-              <span class="font-semibold">Tech Stack</span>
-              :
-              <ul class="list-disc">
-                <li v-for="(item, index) in portfolio.tech" :key="index" class="uppercase">
-                  {{ item }}
-                </li>
-              </ul>
-            </p>
-        
-            <p class="text-title">
-              <span class="font-semibold">Modules</span>
-              <ul class="list-disc">
-                <li v-for="(item, index) in portfolio.modules" :key="index" class="uppercase">
-                  {{ item }}
-                </li>
-              </ul>  
-            </p>
-        </div> -->
     </div>
 </template>

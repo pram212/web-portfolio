@@ -1,14 +1,15 @@
 <script setup>
 import { onMounted, ref, inject } from 'vue';
 import { formatDate } from '../../helpers';
+import experiences from "../../resources/datas/experiences.json"
 
 // await new Promise(resolve => setTimeout(resolve, 500))
 
-const axios = inject('axios')
+// const axios = inject('axios')
 
-const experiences = ref(null)
-const res = await axios.get('/experiences')
-experiences.value = await res.data
+// const experiences = ref(null)
+// const res = await axios.get('/experiences')
+// experiences.value = await res.data
 
 </script>
 

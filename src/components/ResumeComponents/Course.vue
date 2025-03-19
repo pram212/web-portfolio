@@ -1,14 +1,15 @@
 <script setup>
 import { formatDate } from '../../helpers';
 import { onMounted, ref, inject } from 'vue';
+import courses from "../../resources/datas/courses.json"
 
 // await new Promise(resolve => setTimeout(resolve, 500))
 
-const axios = inject('axios')
+// const axios = inject('axios')
 
-const courses = ref(null)
-const res = await axios.get("/courses")
-courses.value = await res.data
+// const courses = ref(null)
+// const res = await axios.get("/courses")
+// courses.value = await res.data
 
 </script>
 
@@ -26,7 +27,7 @@ courses.value = await res.data
         <!-- List -->
         <div class=" dark:border-neutral-700 dark:border-2 rounded-md p-4 mt-3 mb-5" v-for="(item, index) in courses" :key="index">
             <p class="text-gray-500 dark:text-gray-500 font-semibold">{{ formatDate(item.start) }} - {{ formatDate(item.end) }}</p>
-            <p class="text-title-md my-1">{{ item.name }}</p>
+            <p class="text-title-md my-1">{{ item.description }}</p>
             <p class="text-title-sm">{{ item.institution }}</p>
         </div>
     </div>

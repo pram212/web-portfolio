@@ -1,12 +1,13 @@
 <script setup>
 import { onMounted, ref, inject } from 'vue';
 const axios = inject('axios')
+import educations from "../../resources/datas/education.json"
 
 // await new Promise(resolve => setTimeout(resolve, 500))
 
-const educations = ref(null)
-const res = await axios.get("/educations")
-educations.value = await res.data
+// const educations = ref(null)
+// const res = await axios.get("/educations")
+// educations.value = await res.data
 
 </script>
 

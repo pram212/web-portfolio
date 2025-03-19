@@ -1,13 +1,13 @@
 <script setup>
 import ProgressBar from "../Progress.vue"
-import { onMounted, ref, inject } from 'vue';
+import { onMounted, ref, inject, computed } from 'vue';
+import skills from "../../resources/datas/skills.json";
 // await new Promise(resolve => setTimeout(resolve, 500))
-
 const axios = inject('axios')
 
-const skills = ref(null)
-const res = await axios.get('/skills')
-skills.value = await res.data
+// const skills = ref(null)
+// const res = await axios.get('/skills')
+// skills.value = await res.data
 
 const dynamicBadgeColor = (level) => {
     if (level === 'advance') return 'badge-success'
@@ -15,6 +15,17 @@ const dynamicBadgeColor = (level) => {
     if (level === 'basic') return 'badge-error'
     else return 'badge-primary'
 }
+
+// Computed untuk grouping data berdasarkan category
+const groupedSkill = computed(() => {
+  return skills.reduce((result, item) => {
+    if (!result[item.category]) {
+      result[item.category] = [];
+    }
+    result[item.category].push(item);
+    return result;
+  }, {});
+});
 
 </script>
 
@@ -31,7 +42,7 @@ const dynamicBadgeColor = (level) => {
         </h1>
         <div class="divider divider-error"></div>
         <div class="md:grid md:grid-cols-3 md:gap-y-4">
-            <div v-for="(item, index) in skills" :key="index" class="text-black dark:text-white">
+            <div v-for="(item, index) in groupedSkill" :key="index" class="text-black dark:text-white">
                 <h1 class="uppercase font-semibold">{{ index }}</h1>
                 <ul class="list-[square] pl-5">
                     <li v-for="(data, i) in item" :key="i" class="mb-2">
