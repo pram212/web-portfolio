@@ -1,9 +1,15 @@
 <script setup>
 import { Carousel, Slide } from 'vue3-carousel'
 import 'vue3-carousel/dist/carousel.css'
-import axios from 'axios'
+// import axios from 'axios'
 import { ref } from 'vue'
-import clients  from '../../resources/datas/clients.json'
+// import clients  from '../../resources/datas/clients.json'
+import { supabase } from "../../lib/supabaseClient";
+// await new Promise(resolve => setTimeout(resolve, 500))
+
+const clients = ref([])
+const { data } = await supabase.from('clients').select()
+clients.value = data
 
 // const axiosSetup = axios.create({ baseURL: import.meta.env.VITE_APP_API_URL })
 

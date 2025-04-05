@@ -1,7 +1,12 @@
 <script setup>
 import { formatDate } from '../../helpers';
 import { onMounted, ref, inject } from 'vue';
-import courses from "../../resources/datas/courses.json"
+// import courses from "../../resources/datas/courses.json"
+import { supabase } from "../../lib/supabaseClient";
+
+const courses = ref([])
+const { data } = await supabase.from('courses').select()
+courses.value = data
 
 // await new Promise(resolve => setTimeout(resolve, 500))
 
@@ -25,8 +30,10 @@ import courses from "../../resources/datas/courses.json"
             <h2>Course</h2>
         </div>
         <!-- List -->
-        <div class=" dark:border-neutral-700 dark:border-2 rounded-md p-4 mt-3 mb-5" v-for="(item, index) in courses" :key="index">
-            <p class="text-gray-500 dark:text-gray-500 font-semibold">{{ formatDate(item.start) }} - {{ formatDate(item.end) }}</p>
+        <div class=" dark:border-neutral-700 dark:border-2 rounded-md p-4 mt-3 mb-5" v-for="(item, index) in courses"
+            :key="index">
+            <p class="text-gray-500 dark:text-gray-500 font-semibold">{{ formatDate(item.start) }} - {{
+                formatDate(item.end) }}</p>
             <p class="text-title-md my-1">{{ item.description }}</p>
             <p class="text-title-sm">{{ item.institution }}</p>
         </div>

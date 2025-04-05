@@ -5,14 +5,16 @@ import { ref, inject, onMounted, computed } from "vue";
 import "vue3-carousel/dist/carousel.css";
 import { formatDate } from "../../helpers";
 import { useRoute } from "vue-router";
-import moment from "moment";
-import portfolios from "../../resources/datas/portfolios.json"
-const route = useRoute();
-const portfolio = computed(() => {
-  return portfolios.find(p => p.id === parseInt(route.params.id));
-})
+import { supabase } from "../../lib/supabaseClient";
 
-console.log(portfolio.value)
+const route = useRoute();
+const portfolio = ref([])
+const { data } = await supabase.from('portfolios').select().eq('id', route.params.id)
+portfolio.value = data[0]
+
+// const portfolio = computed(() => {
+//   return portfolios.find(p => p.id === parseInt(route.params.id));
+// })
 
 // const axios = inject("axios");
 // const portfolio = ref(null);

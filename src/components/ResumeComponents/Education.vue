@@ -1,7 +1,12 @@
 <script setup>
 import { onMounted, ref, inject } from 'vue';
 const axios = inject('axios')
-import educations from "../../resources/datas/education.json"
+// import educations from "../../resources/datas/education.json"
+import { supabase } from "../../lib/supabaseClient";
+
+const educations = ref([])
+const { data } = await supabase.from('educations').select()
+educations.value = data
 
 // await new Promise(resolve => setTimeout(resolve, 500))
 
@@ -22,11 +27,12 @@ import educations from "../../resources/datas/education.json"
             <h2>Education</h2>
         </div>
         <!-- List -->
-        <div class=" dark:border-neutral-700 dark:border-2 rounded-md p-4 mt-3 mb-5 max-h-fit" v-for="(item, index) in educations" :key="index">
+        <div class=" dark:border-neutral-700 dark:border-2 rounded-md p-4 mt-3 mb-5 max-h-fit"
+            v-for="(item, index) in educations" :key="index">
             <p class="text-gray-500 dark:text-gray-500 font-semibold">{{ item.start }} - {{ item.end }}</p>
             <p class="text-title-md my-1">{{ item.title }}</p>
             <p class="text-title-sm">{{ item.institution }}</p>
         </div>
-    
+
     </div>
 </template>

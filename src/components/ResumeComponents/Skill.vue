@@ -1,13 +1,10 @@
 <script setup>
-import ProgressBar from "../Progress.vue"
-import { onMounted, ref, inject, computed } from 'vue';
-import skills from "../../resources/datas/skills.json";
-// await new Promise(resolve => setTimeout(resolve, 500))
-const axios = inject('axios')
+import { ref, computed } from 'vue';
+import { supabase } from "../../lib/supabaseClient";
 
-// const skills = ref(null)
-// const res = await axios.get('/skills')
-// skills.value = await res.data
+const skills = ref([])
+const { data } = await supabase.from('skills').select()
+skills.value = data
 
 const dynamicBadgeColor = (level) => {
     if (level === 'advance') return 'badge-success'
@@ -18,13 +15,13 @@ const dynamicBadgeColor = (level) => {
 
 // Computed untuk grouping data berdasarkan category
 const groupedSkill = computed(() => {
-  return skills.reduce((result, item) => {
-    if (!result[item.category]) {
-      result[item.category] = [];
-    }
-    result[item.category].push(item);
-    return result;
-  }, {});
+    return skills.value.reduce((result, item) => {
+        if (!result[item.category]) {
+            result[item.category] = [];
+        }
+        result[item.category].push(item);
+        return result;
+    }, {});
 });
 
 </script>

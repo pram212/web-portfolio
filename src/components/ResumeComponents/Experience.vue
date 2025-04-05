@@ -1,7 +1,12 @@
 <script setup>
 import { onMounted, ref, inject } from 'vue';
 import { formatDate } from '../../helpers';
-import experiences from "../../resources/datas/experiences.json"
+// import experiences from "../../resources/datas/experiences.json"
+import { supabase } from '../../lib/supabaseClient';
+
+const experiences = ref([])
+const { data } = await supabase.from('experiences').select()
+experiences.value = data
 
 // await new Promise(resolve => setTimeout(resolve, 500))
 
@@ -25,8 +30,8 @@ import experiences from "../../resources/datas/experiences.json"
             <h2>Experience</h2>
         </div>
         <!-- List -->
-        <div class=" dark:border-neutral-700 dark:border-2 rounded-md p-4 mt-3 mb-5" v-for="(item, index) in experiences"
-            :key="index">
+        <div class=" dark:border-neutral-700 dark:border-2 rounded-md p-4 mt-3 mb-5"
+            v-for="(item, index) in experiences" :key="index">
             <p class="text-gray-500 dark:text-gray-500 font-semibold">
                 {{ formatDate(item.start) }} - {{ formatDate(item.end) }}
             </p>

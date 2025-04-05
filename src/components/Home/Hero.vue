@@ -1,19 +1,13 @@
 <script setup>
 import { onMounted, ref, inject } from "vue";
-import biodata from "../../resources/datas/biodatas.json"
+// import biodata from "../../resources/datas/biodatas.json"
+import { supabase } from "../../lib/supabaseClient";
 // await new Promise(resolve => setTimeout(resolve, 500))
 
-// declared axios setup from main
-const axios = inject("axios")
-// const data = ref(null);
-// if (import.meta.env.VITE_USE_SERVICE) {
-//   console.log("aktif");
-  
-//   const fetchLink = await axios.get("/biodata");
-//   data.value = await fetchLink.data;
-// } else {
-//   data.value = biodata
-// }
+const biodata = ref([])
+
+const { data } = await supabase.from('biodatas').select()
+biodata.value = data[0]
 
 </script>
 
@@ -24,9 +18,7 @@ const axios = inject("axios")
         <img :src="biodata.photo" />
       </div>
     </div>
-    <h3
-      class="mt-4 mb-1 text-3xl font-semibold text-gray-900 dark:text-white capitalize"
-    >
+    <h3 class="mt-4 mb-1 text-3xl font-semibold text-gray-900 dark:text-white capitalize">
       {{ biodata.name }}
     </h3>
     <p class="mb-4 text-muted text-lg">{{ biodata.title }}</p>
