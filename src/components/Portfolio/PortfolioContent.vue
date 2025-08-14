@@ -5,7 +5,7 @@ import { supabase } from "../../lib/supabaseClient";
 
 const projects = ref([])
 
-const { data } = await supabase.from('portfolios').select()
+const { data } = await supabase.from('portfolios').select().order('start', { ascending: false })
 projects.value = data.map(project => ({
   ...project, // Menyalin semua properti project
   images: JSON.parse(project.images) // Convert string ke array
@@ -26,7 +26,7 @@ projects.value = data.map(project => ({
         <div class="card-body">
           <h2 class="card-title text-title">{{ item.project_title }}</h2>
           <p class="text-title text-wrap">
-            {{ item.type }}
+            {{ item.category }}
           </p>
           <div class="card-actions justify-end">
             <router-link :to="'portfolio/' + item.id" class="btn btn-sm btn-primary">Learn More</router-link>

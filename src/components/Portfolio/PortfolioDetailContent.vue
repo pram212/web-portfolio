@@ -46,8 +46,12 @@ portfolio.value = data[0]
 
     <div class="mt-4">
       <p class="capitalize text-title">
-        <span class="font-semibold">Type</span> :
-        <span>{{ portfolio.type }}</span>
+        <span class="font-semibold">Category</span> :
+        <span>{{ portfolio.category }}</span>
+      </p>
+      <p class="capitalize text-title">
+        <span class="font-semibold">Platform</span> :
+        <span>{{ portfolio.platform }}</span>
       </p>
       <p class="capitalize text-title">
         <span class="font-semibold">Date</span> :
