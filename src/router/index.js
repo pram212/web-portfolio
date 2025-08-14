@@ -10,16 +10,16 @@ import PortfolioVue from "../views/Portfolio.vue";
 import ResumeVue from "../views/Resume.vue";
 import PageNotFound from "../views/errors/404.vue";
 import PortfolioDetailVue from "../views/PortfolioDetail.vue";
-import Dashboard from "../views/admin/Dashboard.vue";
-import Client from "../views/admin/Client.vue";
-import Course from "../views/admin/Course.vue";
-import Contact from "../views/admin/Contact.vue";
-import Education from "../views/admin/Education.vue";
-import Experience from "../views/admin/Experience.vue";
-import Skill from "../views/admin/Skill.vue";
-import Login from "../views/auth/Login.vue";
-import Biodata from "../views/admin/Biodata.vue";
-import AdminLayout from "../views/layouts/cms/AdminLayout.vue";
+// import Dashboard from "../views/admin/Dashboard.vue";
+// import Client from "../views/admin/Client.vue";
+// import Course from "../views/admin/Course.vue";
+// import Contact from "../views/admin/Contact.vue";
+// import Education from "../views/admin/Education.vue";
+// import Experience from "../views/admin/Experience.vue";
+// import Skill from "../views/admin/Skill.vue";
+// import Login from "../views/auth/Login.vue";
+// import Biodata from "../views/admin/Biodata.vue";
+// import AdminLayout from "../views/layouts/cms/AdminLayout.vue";
 
 const routes = [
   { path: "/", name: "home", component: HomeVue },
@@ -31,56 +31,56 @@ const routes = [
     name: "portfolio-detail",
     component: PortfolioDetailVue,
   },
-  { path: "/login", name: "Login", component: Login },
-  {
-    path: "/cms",
-    // component: User,
-    children: [
-      {
-        path: "dashboard",
-        component: Dashboard,
-        meta: { requiresAuth: true },
-      },
-      {
-        path: "biodata",
-        component: Biodata,
-        meta: { requiresAuth: true },
-      },
-      {
-        path: "experience",
-        component: Experience,
-        meta: { requiresAuth: true },
-      },
-      {
-        path: "education",
-        component: Education,
-        meta: { requiresAuth: true },
-      },
-      {
-        path: "course",
-        component: Course,
-        meta: { requiresAuth: true },
-      },
-      {
-        path: "client",
-        component: Client,
-        meta: { requiresAuth: true },
-      },
-      {
-        path: "contact",
-        component: Contact,
-        meta: { requiresAuth: true },
-      },
-      {
-        path: "skill",
-        component: Skill,
-        meta: { requiresAuth: true },
-      },
-    ],
-    meta: {
-      layout: AdminLayout,
-    },
-  },
+  // { path: "/login", name: "Login", component: Login },
+  // {
+  //   path: "/cms",
+  //   // component: User,
+  //   children: [
+  //     {
+  //       path: "dashboard",
+  //       component: Dashboard,
+  //       meta: { requiresAuth: true },
+  //     },
+  //     {
+  //       path: "biodata",
+  //       component: Biodata,
+  //       meta: { requiresAuth: true },
+  //     },
+  //     {
+  //       path: "experience",
+  //       component: Experience,
+  //       meta: { requiresAuth: true },
+  //     },
+  //     {
+  //       path: "education",
+  //       component: Education,
+  //       meta: { requiresAuth: true },
+  //     },
+  //     {
+  //       path: "course",
+  //       component: Course,
+  //       meta: { requiresAuth: true },
+  //     },
+  //     {
+  //       path: "client",
+  //       component: Client,
+  //       meta: { requiresAuth: true },
+  //     },
+  //     {
+  //       path: "contact",
+  //       component: Contact,
+  //       meta: { requiresAuth: true },
+  //     },
+  //     {
+  //       path: "skill",
+  //       component: Skill,
+  //       meta: { requiresAuth: true },
+  //     },
+  //   ],
+  //   meta: {
+  //     layout: AdminLayout,
+  //   },
+  // },
   { path: "/:pathMatch(.*)*", component: PageNotFound },
 ];
 
