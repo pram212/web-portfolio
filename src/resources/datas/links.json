@@ -18,15 +18,5 @@
     "color": "#E24329",
     "created_at": "5/12/2024 01:41:26",
     "updated_at": "5/12/2024 01:41:26"
-  },
-  {
-    "id": 3,
-    "name": "linkedin",
-    "url": "https://www.linkedin.com/in/pramono-845744378/",
-    "svg": "/icons/linkedin-svgrepo-com.svg",
-    "icon_font": null,
-    "color": "blue",
-    "created_at": "18/3/2025 00:43:37",
-    "updated_at": "18/3/2025 00:43:37"
   }
 ]
