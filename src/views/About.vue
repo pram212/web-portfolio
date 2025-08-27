@@ -16,11 +16,11 @@ import ClientSkeleton from "../components/Skeletons/ClientSkeleton.vue";
             </template>
         </Suspense>
 
-        <Suspense>
+        <!-- <Suspense>
             <ClientInfo/>
             <template #fallback>
                 <ClientSkeleton/>
             </template>
-        </Suspense>
+        </Suspense> -->
     </ContentCard>
 </template>
