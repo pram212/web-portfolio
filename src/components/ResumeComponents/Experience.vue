@@ -5,7 +5,7 @@ import { formatDate } from '../../helpers';
 import { supabase } from '../../lib/supabaseClient';
 
 const experiences = ref([])
-const { data } = await supabase.from('experiences').select()
+const { data } = await supabase.from('experiences').select().order('start', { ascending: false })
 experiences.value = data
 
 // await new Promise(resolve => setTimeout(resolve, 500))
