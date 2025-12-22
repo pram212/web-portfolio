@@ -40,8 +40,7 @@
     "content": {
         "about_me": {
             "description": "I am a dedicated and passionate software developer with a strong foundation in web development and a keen interest in learning new technologies. With experience in various programming languages and frameworks, I strive to create efficient and user-friendly applications. My journey in the tech world began with a fascination for how things work behind the scenes, leading me to pursue a career in software development. I enjoy collaborating with teams to solve complex problems and deliver high-quality solutions that meet user needs.",
-            "location": "Bandung, Indonesia",
-            "email": "pramono6236@gmail.com"
+            "location": "Bandung, Indonesia"
         },
         "resume": {
             "education": [

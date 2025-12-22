@@ -40,8 +40,7 @@
     "content": {
         "about_me": {
             "description": "Saya adalah seorang pengembang perangkat lunak yang berdedikasi dan penuh semangat dengan dasar yang kuat dalam pengembangan web serta minat yang besar dalam mempelajari teknologi baru. Dengan pengalaman dalam berbagai bahasa pemrograman dan kerangka kerja, saya berusaha untuk menciptakan aplikasi yang efisien dan ramah pengguna. Perjalanan saya di dunia teknologi dimulai dari ketertarikan terhadap cara kerja di balik layar, yang mendorong saya untuk mengejar karir di bidang pengembangan perangkat lunak. Saya menikmati kolaborasi dengan tim untuk memecahkan masalah kompleks dan memberikan solusi berkualitas tinggi yang memenuhi kebutuhan pengguna.",
-            "location": "Bandung, Indonesia",
-            "email": "pramono6236@gmail.com"
+            "location": "Bandung, Indonesia"
         },
         "resume": {
             "education": [

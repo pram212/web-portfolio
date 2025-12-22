@@ -48,7 +48,7 @@ import ContentCard from "@components/ContentCard.vue"
                                     {{ $t('elements.about_page.contact.email') }}
                                 </p>
                                 <p class="font-medium text-black dark:text-white">
-                                    {{ $t('content.about_me.email') }}
+                                    pramono6236@gmail.com
                                 </p>
                             </div>
                         </div>
