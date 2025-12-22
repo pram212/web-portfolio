@@ -15,5 +15,8 @@ export default defineConfig({
       '@plugins': '/src/plugins',
       '@public': '/public'
     }
+  },
+  build: {
+    sourcemap: true
   }
 })

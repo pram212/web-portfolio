@@ -28,9 +28,9 @@ import ContentCard from "@components/ContentCard.vue"
 
                             </div>
                             <div>
-                                <p class="text-sm font-medium text-gray-500">{{
-                                    $t('elements.about_page.contact.location')
-                                    }}</p>
+                                <p class="text-sm font-medium text-gray-500">
+                                    {{ $t('elements.about_page.contact.location') }}
+                                </p>
                                 <p class="font-medium text-black dark:text-white">{{ $t('content.about_me.location') }}
                                 </p>
                             </div>
@@ -44,10 +44,12 @@ import ContentCard from "@components/ContentCard.vue"
                                 </svg>
                             </div>
                             <div>
-                                <p class="text-sm font-medium text-gray-500">{{ $t('elements.about_page.contact.email')
-                                    }}
+                                <p class="text-sm font-medium text-gray-500">
+                                    {{ $t('elements.about_page.contact.email') }}
                                 </p>
-                                <p class="font-medium text-black dark:text-white">{{ $t('content.about_me.email') }}</p>
+                                <p class="font-medium text-black dark:text-white">
+                                    {{ $t('content.about_me.email') }}
+                                </p>
                             </div>
                         </div>
                     </div>
