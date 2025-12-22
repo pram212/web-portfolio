@@ -6,7 +6,7 @@ import ContentCard from "@components/ContentCard.vue"
     <ContentCard :title="$t('elements.about_page.header')">
         <section class="md:flex md:space-x-8 mb-7">
             <div class="min-h-fit md:flex-1 mb-5">
-                <img src="/foto-2.jpg" class="rounded-[35px] border-none shadow-lg" />
+                <img src="/foto2.jpg" class="rounded-[35px] border-none shadow-lg" />
             </div>
             <div class="content md:w-[60%]">
                 <section class="mb-4">
