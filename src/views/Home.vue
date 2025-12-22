@@ -46,7 +46,6 @@ const links = [
                     <img :src="item.svg" class="h-8 w-8" alt="">
                 </a>
             </div>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam modi soluta laudantium amet sapiente delectus quisquam distinctio pariatur illum aliquid totam doloribus tempore labore, velit qui deleniti accusantium animi non!</p>
             <!-- <a v-if="locale === 'id'" href="/cv/CV_ID.pdf" target="blank" class="bg-gradient-to-r from-[#FA5252] to-[#DD2476] duration-200 transition ease-linear hover:bg-gradient-to-l px-8 py-3 text-lg text-white rounded-[35px]">Download CV</a>
             <a v-else href="/cv/CV_EN.pdf" target="blank" class="bg-gradient-to-r from-[#FA5252] to-[#DD2476] duration-200 transition ease-linear hover:bg-gradient-to-l px-8 py-3 text-lg text-white rounded-[35px]">Download CV</a> -->
         </div>
