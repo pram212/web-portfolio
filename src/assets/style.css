@@ -7,6 +7,7 @@
         @apply bg-no-repeat bg-fixed bg-center bg-cover;
         background-image: url('/bg.jpg')
     }
+
     .bg-night {
         @apply bg-no-repeat bg-fixed bg-center bg-cover;
         background-image: url('/bg-dark.jpg')
@@ -17,7 +18,7 @@
     }
 
     .btn-primary {
-        @apply border-none bg-white dark:bg-neutral-600 text-black dark:text-white hover:bg-gradient-to-r from-[#FA5252] to-[#DD2476] font-medium;
+        @apply border-none bg-white dark:bg-neutral-600 text-black dark:text-white hover:bg-gradient-to-r from-[#FA5252] to-[#DD2476] font-medium disabled:text-black;
     }
 
     .text-title {
@@ -27,6 +28,7 @@
     .text-title-md {
         @apply text-black dark:text-white text-lg font-semibold
     }
+
     .text-title-sm {
         @apply text-black dark:text-white
     }
@@ -36,11 +38,11 @@
         @apply md:text-3xl text-2xl my-auto font-medium text-red-500
     }
 
-    .font-title  {
+    .font-title {
         @apply text-black dark:text-white text-2xl font-medium mb-4
     }
+
     .text-muted {
         @apply text-gray-700 dark:text-neutral-400
     }
 }
-  

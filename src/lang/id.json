@@ -1,0 +1,143 @@
+{
+    "elements": {
+        "nav": {
+            "home": "Beranda",
+            "resume": "Riwayat",
+            "about": "Tentang Saya",
+            "work": "Portofolio"
+        },
+        "about_page": {
+            "header": "Tentang Saya",
+            "who_am_i": "Siapa Saya?",
+            "contact": {
+                "title": "Kontak",
+                "location": "Lokasi",
+                "email": "Email"
+            }
+        },
+        "resume_page": {
+            "header": "Riwayat",
+            "education": "Pendidikan",
+            "experience": "Pengalaman Kerja",
+            "skill": "Keahlian",
+            "course": "Kursus"
+        },
+        "work_page": {
+            "header": "Portofolio Saya",
+            "work_detail": {
+                "header": "Rincian Proyek",
+                "project_date": "Tanggal Proyek",
+                "project_category": "Kategori Proyek",
+                "platform": "Platform",
+                "live_demo": "Demo Langsung"
+            }
+        },
+        "buttons": {
+            "read_more": "Baca Selengkapnya",
+            "back_to_portfolio": "Kembali ke Portofolio"
+        }
+    },
+    "content": {
+        "about_me": {
+            "description":
+                "Saya adalah seorang pengembang perangkat lunak yang berdedikasi dan penuh semangat dengan dasar yang kuat dalam pengembangan web serta minat yang besar dalam mempelajari teknologi baru. Dengan pengalaman dalam berbagai bahasa pemrograman dan kerangka kerja, saya berusaha untuk menciptakan aplikasi yang efisien dan ramah pengguna. Perjalanan saya di dunia teknologi dimulai dari ketertarikan terhadap cara kerja di balik layar, yang mendorong saya untuk mengejar karir di bidang pengembangan perangkat lunak. Saya menikmati kolaborasi dengan tim untuk memecahkan masalah kompleks dan memberikan solusi berkualitas tinggi yang memenuhi kebutuhan pengguna.",
+            "location": "Bandung, Indonesia",
+            "email": "pramono6236@gmail.com"
+        },
+        "resume": {
+            "education": [
+                {
+                    "degree": "Diploma III Perbankan Syariah",
+                    "institution": "di STEBank Islam Mr. Sjafruddin Prawiranegara",
+                    "year": "2014 - 2017"
+                }
+            ],
+            "experience": [
+                {
+                    "position": "Frontend Developer (Freelance)",
+                    "company": "PT Vodjo Teknologi Indonesia",
+                    "year": "Juli 2025 - Sekarang"
+                },
+                {
+                    "position": "Laravel Developer (Freelance)",
+                    "company": "Corzative Technology",
+                    "year": "Februari 2025 - Mei 2025"
+                },
+                {
+                    "position": "Fullstack Developer",
+                    "company": "Melkhior Teknologi",
+                    "year": "September 2023 - September 2024"
+                },
+                {
+                    "position": "Software Engineer",
+                    "company": "PT Mandala Dwipantara Proteksi",
+                    "year": "Februari 2022 - Juli 2023"
+                }
+            ],
+            "course": [
+                {
+                    "course_name": "Laravel Web Development Bootcamp",
+                    "platform": "Sanbercode",
+                    "year": "April 2021 - Mei 2021"
+                },
+                {
+                    "course_name": "Laravel X Vue.js Bootcamp",
+                    "platform": "Eduwork",
+                    "year": "November 2021 - Januari 2022"
+                }
+            ],
+            "skill": {
+                "backend" : [
+                    {"skill_name": "PHP", "level": "Advanced" },
+                    { "skill_name": "Laravel", "level": "Advanced" },
+                    { "skill_name": "Node.js", "level": "Experience" },
+                    { "skill_name": "Express.js", "level": "Experience" },
+                    { "skill_name": "CodeIgniter", "level": "Experience" },
+                    { "skill_name": "Golang", "level": "Basic" }
+                ],
+                "Frontend" : [
+                    { "skill_name": "JavaScript", "level": "Advanced" },
+                    { "skill_name": "HTML & CSS", "level": "Advanced" },
+                    { "skill_name": "Vue.js", "level": "Advanced" },
+                    { "skill_name": "Tailwind CSS", "level": "Advanced" },
+                    { "skill_name": "Bootstrap", "level": "Advanced" },
+                    { "skill_name": "jQuery", "level": "Advanced" },
+                    { "skill_name": "React.js", "level": "Basic" },
+                    { "skill_name": "Next.js", "level": "Basic" }
+                ],
+                "database" : [
+                    { "skill_name": "MySQL", "level": "Advanced" },
+                    { "skill_name": "SQLite", "level": "Experience" },
+                    { "skill_name": "PostgreSQL", "level": "Basic" },
+                    { "skill_name": "MongoDB", "level": "Basic" }
+                ],
+                "devops" : [
+                    { "skill_name": "Git", "level": "Advanced" },
+                    { "skill_name": "Linux", "level": "Experience" },
+                    { "skill_name": "Nginx", "level": "Experience" },
+                    { "skill_name": "Apache", "level": "Experience" },
+                    { "skill_name": "Docker", "level": "Basic" },
+                    { "skill_name": "CI/CD", "level": "Basic" }
+                ]
+            }
+        },
+        "projects": {
+            "digitalBanking": {
+                "title": "Sistem Dukungan Perbankan Digital (Internal ERP)",
+                "company": "PT Melkhior Teknologi",
+                "description": [
+                    "Saya berkontribusi dalam pengembangan dan pemeliharaan Sistem Dukungan Perbankan Digital (Internal ERP) yang digunakan untuk mendukung operasional internal bank. Dalam proyek ini, saya ditunjuk untuk menangani beberapa bagian sistem, khususnya pada aspek keamanan aplikasi dan optimasi performa.",
+                    "Selama keterlibatan saya, saya berhasil meningkatkan tingkat keamanan aplikasi dengan mengurangi temuan kerentanan hasil pengujian penetrasi (pentest), di mana temuan berisiko tinggi (high severity) berhasil diturunkan hingga 0%, serta temuan risiko menengah (medium severity) juga mengalami penurunan. Selain itu, saya melakukan optimasi performa aplikasi dengan memperbaiki logika kode dan mengoptimalkan query database, sehingga proses pemuatan data menjadi lebih cepat dan stabil."
+                ],
+                "technologies": "PHP, JavaScript, jQuery, Bootstrap, CSS",
+                "database": "MySQL",
+                "contributions": [
+                    "Menangani perbaikan kerentanan keamanan berdasarkan hasil penetration testing",
+                    "Menghilangkan temuan keamanan berisiko tinggi (high severity) hingga 0%",
+                    "Mengoptimalkan performa load data melalui perbaikan logika kode dan query database",
+                    "Berpartisipasi dalam pengembangan dan pemeliharaan modul operasional internal"
+                ]
+            }
+        }
+    }
+}

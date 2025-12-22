@@ -1,7 +1,7 @@
 <script setup>
-import { ref } from "vue";
-import ContentCard from "../ContentCard.vue";
-import { supabase } from "../../lib/supabaseClient";
+import { ref } from "vue"
+import ContentCard from "@components/ContentCard.vue"
+import { supabase } from "@/lib/supabaseClient"
 
 const projects = ref([])
 
@@ -14,7 +14,7 @@ projects.value = data.map(project => ({
 </script>
 
 <template>
-  <ContentCard title="Portfolio">
+  <ContentCard :title="$t('elements.work_page.header')">
     <div class="md:grid md:grid-cols-3 md:gap-4 space-y-3 md:space-y-0">
       <div class="card bg-transparent dark:bg-base-300 w-full shadow-xl" v-for="(item, index) in projects" :key="index">
         <figure class="h-36 overflow-hidden">
@@ -29,7 +29,7 @@ projects.value = data.map(project => ({
             {{ item.category }}
           </p>
           <div class="card-actions justify-end">
-            <router-link :to="'portfolio/' + item.id" class="btn btn-sm btn-primary">Learn More</router-link>
+            <router-link :to="'portfolio/' + item.id" class="btn btn-sm btn-primary">{{ $t('elements.buttons.read_more') }}</router-link>
           </div>
         </div>
       </div>

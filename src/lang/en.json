@@ -1,0 +1,143 @@
+{
+    "elements": {
+        "nav": {
+            "home": "Home",
+            "resume": "Resume",
+            "about": "About",
+            "work": "Portfolio"
+        },
+        "about_page": {
+            "header": "About Me",
+            "who_am_i": "Who Am I?",
+            "contact": {
+                "title": "Contact",
+                "location": "Location",
+                "email": "Email"
+            }
+        },
+        "resume_page": {
+            "header": "My Resume",
+            "education": "Education",
+            "experience": "Experience",
+            "skill": "Skill",
+            "course": "Course"
+        },
+        "work_page": {
+            "header": "My Portfolio",
+            "work_detail": {
+                "header": "Project Details",
+                "project_date": "Project Date",
+                "project_category": "Project Category",
+                "live_demo": "Live Demo",
+                "platform": "Platform"
+            }
+        },
+        "buttons": {
+            "read_more": "Read More",
+            "back_to_portfolio": "Back to Portfolio"
+        }
+    },
+    "content": {
+        "about_me": {
+            "description":
+                "I am a dedicated and passionate software developer with a strong foundation in web development and a keen interest in learning new technologies. With experience in various programming languages and frameworks, I strive to create efficient and user-friendly applications. My journey in the tech world began with a fascination for how things work behind the scenes, leading me to pursue a career in software development. I enjoy collaborating with teams to solve complex problems and deliver high-quality solutions that meet user needs.",
+            "location": "Bandung, Indonesia",
+            "email": "pramono6236@gmail.com"
+        },
+        "resume": {
+            "education": [
+                {
+                    "degree": "Associate's Degree in Islamic Banking",
+                    "institution": "at STEBank Islam Mr. Sjafruddin Prawiranegara",
+                    "year": "2014 - 2017"
+                }
+            ],
+            "experience": [
+                {
+                    "position": "Frontend Developer (Freelance)",
+                    "company": "PT Vodjo Teknologi Indonesia",
+                    "year": "July 2025 - Present"
+                },
+                {
+                    "position": "Laravel Developer (Freelance)",
+                    "company": "Corzative Technology",
+                    "year": "February 2025 - May 2025"
+                },
+                {
+                    "position": "Fullstack Developer",
+                    "company": "Melkhior Teknologi",
+                    "year": "September 2023 - September 2024"
+                },
+                {
+                    "position": "Software Engineer",
+                    "company": "PT Mandala Dwipantara Proteksi",
+                    "year": "February 2022 - July 2023"
+                }
+            ],
+            "course": [
+                {
+                    "course_name": "Laravel Web Development Bootcamp",
+                    "platform": "Sanbercode",
+                    "year": "April 2021 - May 2021"
+                },
+                {
+                    "course_name": "Laravel X Vue.js Bootcamp",
+                    "platform": "Eduwork",
+                    "year": "November 2021 - January 2022"
+                }
+            ],
+            "skill": {
+                "backend" : [
+                    {"skill_name": "PHP", "level": "Advanced" },
+                    { "skill_name": "Laravel", "level": "Advanced" },
+                    { "skill_name": "Node.js", "level": "Experience" },
+                    { "skill_name": "Express.js", "level": "Experience" },
+                    { "skill_name": "CodeIgniter", "level": "Experience" },
+                    { "skill_name": "Golang", "level": "Basic" }
+                ],
+                "Frontend" : [
+                    { "skill_name": "JavaScript", "level": "Advanced" },
+                    { "skill_name": "HTML & CSS", "level": "Advanced" },
+                    { "skill_name": "Vue.js", "level": "Advanced" },
+                    { "skill_name": "Tailwind CSS", "level": "Advanced" },
+                    { "skill_name": "Bootstrap", "level": "Advanced" },
+                    { "skill_name": "jQuery", "level": "Advanced" },
+                    { "skill_name": "React.js", "level": "Basic" },
+                    { "skill_name": "Next.js", "level": "Basic" }
+                ],
+                "database" : [
+                    { "skill_name": "MySQL", "level": "Advanced" },
+                    { "skill_name": "SQLite", "level": "Experience" },
+                    { "skill_name": "PostgreSQL", "level": "Basic" },
+                    { "skill_name": "MongoDB", "level": "Basic" }
+                ],
+                "devops" : [
+                    { "skill_name": "Git", "level": "Advanced" },
+                    { "skill_name": "Linux", "level": "Experience" },
+                    { "skill_name": "Nginx", "level": "Experience" },
+                    { "skill_name": "Apache", "level": "Experience" },
+                    { "skill_name": "Docker", "level": "Basic" },
+                    { "skill_name": "CI/CD", "level": "Basic" }
+                ]
+            }
+        },
+        "projects": {
+            "digitalBanking": {
+                "title": "Digital Banking Support System (Internal ERP)",
+                "company": "PT Melkhior Teknologi",
+                "description": [
+                    "I contributed to the development and maintenance of an internal Digital Banking Support System (ERP) used to support internal banking operations. I was assigned to handle specific parts of the system, with a primary focus on application security improvements and performance optimization.",
+                    "During my involvement, I successfully improved the application's security posture by addressing vulnerabilities identified through penetration testing. High-severity findings were reduced to 0%, while medium-severity vulnerabilities were also significantly reduced. Additionally, I enhanced application performance by optimizing backend logic and database queries, resulting in faster and more stable data loading."
+                ],
+                "technologies": "PHP, JavaScript, jQuery, Bootstrap, CSS",
+                "database": "MySQL",
+                "contributions": [
+                    "Resolved security vulnerabilities based on penetration testing results",
+                    "Reduced high-severity security findings to 0%",
+                    "Improved data loading performance through code refactoring and query optimization",
+                    "Supported ongoing development and maintenance of internal operational modules"
+                ]
+            }
+        }
+    }
+}
