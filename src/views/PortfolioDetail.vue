@@ -14,6 +14,20 @@ const route = useRoute()
 const { tm } = useI18n()
 const project = computed(() => tm('content.projects')[route.params.id])
 
+const projects = computed(() => tm('content.projects'))
+
+const projectIndex = computed(() => Object.keys(projects.value).indexOf(route.params.id))
+
+const nextUrl = computed(() => {
+  const key = Object.keys(projects.value)[projectIndex.value + 1]
+  return key ? `/portfolio/${key}` : null
+})
+
+const prevUrl = computed(() => {
+  const key = Object.keys(projects.value)[projectIndex.value - 1]
+  return key ? `/portfolio/${key}` : null
+})
+
 </script>
 
 <template>
@@ -47,7 +61,8 @@ const project = computed(() => tm('content.projects')[route.params.id])
             <td class="text-gray-700 dark:text-white">: {{ project.domain }}</td>
           </tr>
           <tr>
-            <td class="capitalize font-semibold text-error">{{ $t('elements.work_page.work_detail.architecture') }} </td>
+            <td class="capitalize font-semibold text-error">{{ $t('elements.work_page.work_detail.architecture') }}
+            </td>
             <td class="text-gray-700 dark:text-white">: {{ project.architecture }}</td>
           </tr>
           <tr>
@@ -61,7 +76,7 @@ const project = computed(() => tm('content.projects')[route.params.id])
           <tr v-if="project.demo">
             <td class="capitalize font-semibold text-error">{{ $t('elements.work_page.work_detail.live_demo') }} </td>
             <td>
-              <a target="_blank" :href="project.demo?.url">{{ project.demo?.url}}</a>
+              <a target="_blank" :href="project.demo?.url">{{ project.demo?.url }}</a>
             </td>
           </tr>
         </table>
@@ -69,43 +84,53 @@ const project = computed(() => tm('content.projects')[route.params.id])
 
       <div class="divider divider-error"></div>
       <!-- name of each tab group should be unique -->
-       <div>
-         <div role="tablist" class="tabs tabs-bordered overflow-x-auto">
-           <input type="radio" role="tab" name="my_tabs_3" class="tab text-error font-semibold text-nowrap capitalize" :aria-label="$t('elements.work_page.work_detail.overview')" checked="checked" />
-           <div role="tabpanel" class="tab-content p-6">
-             <p v-for="value in project.description" class="text-black dark:text-white mb-4 prose prose-sm max-w-none prose-strong:text-black dark:prose-strong:text-white space-y-2 prose-ol:ml-5">
-               {{ value }}
-             </p>
-           </div>
-   
-           <input type="radio" role="tab" name="my_tabs_3" class="tab text-error font-semibold text-nowrap capitalize"
-             :aria-label="$t('elements.work_page.work_detail.contributions')" />
-           <div role="tabpanel" class="tab-content p-6">
-             <ul>
-               <li v-for="value in project.contributions"
-                 class="text-black dark:text-white mb-4 prose prose-sm max-w-none prose-strong:text-black dark:prose-strong:text-white space-y-2 prose-ol:ml-5">
-                 {{ value }}
-               </li>
-             </ul>
-           </div>
-   
-           <input type="radio" role="tab" name="my_tabs_3" class="tab text-error font-semibold text-nowrap capitalize" :aria-label="$t('elements.work_page.work_detail.technologies')" />
-           <div role="tabpanel" class="tab-content p-6">
-             <div class="flex flex-wrap gap-2">
-               <span v-for="(tech, index) in project.technologies.split(',')" :key="index"
-                 class="btn btn-base-300 text-white font-semibold">
-                 {{ tech }}
-               </span>
-             </div>
-           </div>
-   
-         </div>
-       </div>
+      <div>
+        <div role="tablist" class="tabs tabs-bordered overflow-x-auto">
+          <input type="radio" role="tab" name="my_tabs_3" class="tab text-error font-semibold text-nowrap capitalize"
+            :aria-label="$t('elements.work_page.work_detail.overview')" checked="checked" />
+          <div role="tabpanel" class="tab-content p-6">
+            <p v-for="value in project.description"
+              class="text-black dark:text-white mb-4 prose prose-sm max-w-none prose-strong:text-black dark:prose-strong:text-white space-y-2 prose-ol:ml-5">
+              {{ value }}
+            </p>
+          </div>
 
-      <div class="flex justify-end">
-        <Link to="/portfolio" class="mb-4 text-right">{{ $t('elements.buttons.back_to_portfolio') }}</Link>
+          <input type="radio" role="tab" name="my_tabs_3" class="tab text-error font-semibold text-nowrap capitalize"
+            :aria-label="$t('elements.work_page.work_detail.contributions')" />
+          <div role="tabpanel" class="tab-content p-6">
+            <ul>
+              <li v-for="value in project.contributions"
+                class="text-black dark:text-white mb-4 prose prose-sm max-w-none prose-strong:text-black dark:prose-strong:text-white space-y-2 prose-ol:ml-5">
+                {{ value }}
+              </li>
+            </ul>
+          </div>
+
+          <input type="radio" role="tab" name="my_tabs_3" class="tab text-error font-semibold text-nowrap capitalize"
+            :aria-label="$t('elements.work_page.work_detail.technologies')" />
+          <div role="tabpanel" class="tab-content p-6">
+            <div class="flex flex-wrap gap-2">
+              <span v-for="(tech, index) in project.technologies.split(',')" :key="index"
+                class="btn btn-base-300 text-white font-semibold">
+                {{ tech }}
+              </span>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="mt-4">
+          <div class="mb-4">
+            <Link to="/portfolio" class="btn btn-sm">{{ $t('elements.buttons.back_to_portfolio') }}</Link>
+          </div>
+
+          <div class="flex justify-start md:justify-end space-x-2">
+            <Link v-if="prevUrl" :to="prevUrl" class="btn btn-sm">{{ $t('elements.buttons.previous') }}</Link>
+            <Link v-if="nextUrl" :to="nextUrl" class="btn btn-sm">{{ $t('elements.buttons.next') }}</Link>
+          </div>
+        </div>
+        
       </div>
-
     </div>
   </ContentCard>
 </template>

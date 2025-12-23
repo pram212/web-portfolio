@@ -38,7 +38,9 @@
         },
         "buttons": {
             "read_more": "Baca Selengkapnya",
-            "back_to_portfolio": "Kembali ke Portofolio"
+            "back_to_portfolio": "Kembali ke Portofolio",
+            "next": "Selanjutnya",
+            "previous": "Sebelumnya"
         }
     },
     "content": {

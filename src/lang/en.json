@@ -38,7 +38,9 @@
         },
         "buttons": {
             "read_more": "Read More",
-            "back_to_portfolio": "Back to Portfolio"
+            "back_to_portfolio": "Back to Portfolio",
+            "next": "Next",
+            "previous": "Previous"
         }
     },
     "content": {
