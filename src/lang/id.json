@@ -26,10 +26,11 @@
             "header": "Portofolio Saya",
             "work_detail": {
                 "header": "Rincian Proyek",
-                "project_date": "Tanggal Proyek",
-                "project_category": "Kategori Proyek",
-                "platform": "Platform",
-                "live_demo": "Demo Langsung"
+                "type": "tipe",
+                "domain": "domain",
+                "architecture": "arsitektur",
+                "team": "ukuran tim",
+                "role": "peran saya"
             }
         },
         "buttons": {
@@ -85,43 +86,126 @@
                 }
             ],
             "skill": {
-                "backend" : [
-                    {"skill_name": "PHP", "level": "Advanced" },
-                    { "skill_name": "Laravel", "level": "Advanced" },
-                    { "skill_name": "Node.js", "level": "Experience" },
-                    { "skill_name": "Express.js", "level": "Experience" },
-                    { "skill_name": "CodeIgniter", "level": "Experience" },
-                    { "skill_name": "Golang", "level": "Basic" }
+                "backend": [
+                    {
+                        "skill_name": "PHP",
+                        "level": "Advanced"
+                    },
+                    {
+                        "skill_name": "Laravel",
+                        "level": "Advanced"
+                    },
+                    {
+                        "skill_name": "Node.js",
+                        "level": "Experience"
+                    },
+                    {
+                        "skill_name": "Express.js",
+                        "level": "Experience"
+                    },
+                    {
+                        "skill_name": "CodeIgniter",
+                        "level": "Experience"
+                    },
+                    {
+                        "skill_name": "Golang",
+                        "level": "Basic"
+                    }
                 ],
-                "Frontend" : [
-                    { "skill_name": "JavaScript", "level": "Advanced" },
-                    { "skill_name": "HTML & CSS", "level": "Advanced" },
-                    { "skill_name": "Vue.js", "level": "Advanced" },
-                    { "skill_name": "Tailwind CSS", "level": "Advanced" },
-                    { "skill_name": "Bootstrap", "level": "Advanced" },
-                    { "skill_name": "jQuery", "level": "Advanced" },
-                    { "skill_name": "React.js", "level": "Basic" },
-                    { "skill_name": "Next.js", "level": "Basic" }
+                "Frontend": [
+                    {
+                        "skill_name": "JavaScript",
+                        "level": "Advanced"
+                    },
+                    {
+                        "skill_name": "HTML & CSS",
+                        "level": "Advanced"
+                    },
+                    {
+                        "skill_name": "Vue.js",
+                        "level": "Advanced"
+                    },
+                    {
+                        "skill_name": "Tailwind CSS",
+                        "level": "Advanced"
+                    },
+                    {
+                        "skill_name": "Bootstrap",
+                        "level": "Advanced"
+                    },
+                    {
+                        "skill_name": "jQuery",
+                        "level": "Advanced"
+                    },
+                    {
+                        "skill_name": "React.js",
+                        "level": "Basic"
+                    },
+                    {
+                        "skill_name": "Next.js",
+                        "level": "Basic"
+                    }
                 ],
-                "database" : [
-                    { "skill_name": "MySQL", "level": "Advanced" },
-                    { "skill_name": "SQLite", "level": "Experience" },
-                    { "skill_name": "PostgreSQL", "level": "Basic" },
-                    { "skill_name": "MongoDB", "level": "Basic" }
+                "database": [
+                    {
+                        "skill_name": "MySQL",
+                        "level": "Advanced"
+                    },
+                    {
+                        "skill_name": "SQLite",
+                        "level": "Experience"
+                    },
+                    {
+                        "skill_name": "PostgreSQL",
+                        "level": "Basic"
+                    },
+                    {
+                        "skill_name": "MongoDB",
+                        "level": "Basic"
+                    }
                 ],
-                "devops" : [
-                    { "skill_name": "Git", "level": "Advanced" },
-                    { "skill_name": "Linux", "level": "Experience" },
-                    { "skill_name": "Nginx", "level": "Experience" },
-                    { "skill_name": "Apache", "level": "Experience" },
-                    { "skill_name": "Docker", "level": "Basic" },
-                    { "skill_name": "CI/CD", "level": "Basic" }
+                "devops": [
+                    {
+                        "skill_name": "Git",
+                        "level": "Advanced"
+                    },
+                    {
+                        "skill_name": "Linux",
+                        "level": "Experience"
+                    },
+                    {
+                        "skill_name": "Nginx",
+                        "level": "Experience"
+                    },
+                    {
+                        "skill_name": "Apache",
+                        "level": "Experience"
+                    },
+                    {
+                        "skill_name": "Docker",
+                        "level": "Basic"
+                    },
+                    {
+                        "skill_name": "CI/CD",
+                        "level": "Basic"
+                    }
                 ]
             }
         },
         "projects": {
             "digitalBanking": {
-                "title": "Sistem Dukungan Perbankan Digital (Internal ERP)",
+                "title": "Sistem Dukungan Perbankan Digital",
+                "type": "Sistem ERP Internal",
+                "domain": "Perbankan",
+                "architecture": "Monolitik",
+                "team": "Multi Pengembang",
+                "role": "Fullstack Developer",
+                "images": [
+                    {"src": "/portfolios/dbss1.png"},
+                    {"src": "/portfolios/dbss2.png"},
+                    {"src": "/portfolios/dbss3.png"},
+                    {"src": "/portfolios/dbss4.png"}
+                ],
                 "company": "PT Melkhior Teknologi",
                 "description": [
                     "Saya berkontribusi dalam pengembangan dan pemeliharaan Sistem Dukungan Perbankan Digital (Internal ERP) yang digunakan untuk mendukung operasional internal bank. Dalam proyek ini, saya ditunjuk untuk menangani beberapa bagian sistem, khususnya pada aspek keamanan aplikasi dan optimasi performa.",
@@ -134,6 +218,189 @@
                     "Menghilangkan temuan keamanan berisiko tinggi (high severity) hingga 0%",
                     "Mengoptimalkan performa load data melalui perbaikan logika kode dan query database",
                     "Berpartisipasi dalam pengembangan dan pemeliharaan modul operasional internal"
+                ]
+            },
+            "akuiNasre": {
+                "title": "AKUI Nasre",
+                "type": "Applikasi Web Internal",
+                "domain": "Asuransi / Akuntansi",
+                "architecture": "Monolitik",
+                "team": "2 Pengembang",
+                "role": "Software Engineer",
+                "images": [
+                    {"src": "/portfolios/nasre1.png"},
+                    {"src": "/portfolios/nasre2.png"}
+                ],
+                "company": "PT Mandala Dwipantara Proteksi",
+                "description": [
+                    "Saya berkontribusi dalam pengembangan aplikasi internal berbasis web untuk mengelola data akuntansi dan keuangan pada perusahaan asuransi. Aplikasi ini dikembangkan sebagai bagian dari migrasi sistem dari basis desktop ke aplikasi web terpusat dengan arsitektur monolith.",
+                    "Proyek ini dikerjakan oleh tim kecil yang terdiri dari dua orang developer. Tanggung jawab saya meliputi pengembangan aplikasi secara langsung (hands-on coding) serta berkoordinasi dengan klien untuk menggali kebutuhan fitur dan menerjemahkannya ke dalam sistem. Aplikasi ini membantu meningkatkan efisiensi operasional dan konsistensi dalam pengelolaan data keuangan dan akuntansi."
+                ],
+                "technologies": "Laravel, PHP, Bootstrap, jQuery",
+                "database": "MySQL",
+                "contributions": [
+                    "Mengembangkan dan memelihara modul utama akuntansi dan manajemen keuangan",
+                    "Berkoordinasi langsung dengan klien untuk merumuskan dan menyempurnakan kebutuhan fitur",
+                    "Mengimplementasikan logika bisnis untuk modul keuangan, investasi, dan pelaporan",
+                    "Mendukung proses migrasi sistem dari aplikasi desktop ke aplikasi berbasis web"
+                ]
+            },
+            "alAmin": {
+                "title": "Al-Amin – Sistem Manajemen Asuransi Syariah",
+                "type": "Aplikasi Web Internal",
+                "domain": "Asuransi Syariah",
+                "architecture": "Monolith",
+                "team": "2 Pengembang",
+                "role": "Software Engineer",
+                "images": [
+                    {"src": "/portfolios/alamin1.png"},
+                    {"src": "/portfolios/alamin2.png"}
+                ],
+                "company": "PT Mandala Dwipantara Proteksi",
+                "description": [
+                    "Saya berkontribusi dalam pengembangan ulang aplikasi internal berbasis web yang digunakan oleh perusahaan asuransi syariah. Proyek ini bertujuan untuk meningkatkan performa dan kemudahan pemeliharaan aplikasi monolith yang telah ada sebelumnya.",
+                    "Aplikasi ini dikembangkan sebagai bagian dari proses migrasi teknologi dari PHP Native ke framework Laravel. Saya bekerja dalam tim kecil yang terdiri dari dua orang developer, dengan tanggung jawab utama pada pengembangan aplikasi (hands-on coding) serta berkoordinasi langsung dengan klien untuk menggali dan menerjemahkan kebutuhan fitur ke dalam sistem."
+                ],
+                "technologies": "Laravel, PHP, Vue.js",
+                "database": "MySQL",
+                "contributions": [
+                    "Melakukan migrasi aplikasi legacy dari PHP Native ke Laravel",
+                    "Meningkatkan performa dan kualitas struktur kode aplikasi",
+                    "Mengembangkan modul inti manajemen asuransi",
+                    "Mengimplementasikan sistem autentikasi dan Role-Based Access Control (RBAC)",
+                    "Berkoordinasi dengan klien dalam perumusan dan implementasi kebutuhan bisnis"
+                ]
+            },
+            "posJewelry": {
+                "title": "POS Jewelry Store",
+                "type": "Aplikasi Web Point of Sale (POS)",
+                "domain": "Ritel / Perhiasan",
+                "architecture": "Monolitik",
+                "team": "Tim Internal",
+                "role": "Fullstack Developer (Dukungan)",
+                "images": [
+                    {"src": "/portfolios/tokomas1.png"},
+                    {"src": "/portfolios/tokomas2.png"},
+                    {"src": "/portfolios/tokomas3.png"}
+                ],
+                "company": "PT Melkhior Teknologi",
+                "description": [
+                    "Saya berkontribusi sebagai Fullstack Developer dalam mendukung pengembangan dan pemeliharaan aplikasi Point of Sales (POS) berbasis web yang digunakan oleh toko emas untuk mengelola operasional bisnis harian.",
+                    "Aplikasi ini dikembangkan menggunakan arsitektur monolith dengan Laravel 6. Tanggung jawab saya berfokus pada penambahan fitur, perbaikan bug, serta proses deployment aplikasi ke server produksi. Meskipun proyek ini tidak menjadi fokus utama pengembangan saya, peran saya penting dalam menjaga stabilitas dan kelancaran operasional sistem."
+                ],
+                "technologies": "PHP, Laravel, Bootstrap, jQuery",
+                "database": "MySQL",
+                "contributions": [
+                    "Menambahkan dan menyempurnakan fitur sesuai kebutuhan bisnis",
+                    "Memperbaiki bug dan menjaga stabilitas aplikasi",
+                    "Melakukan deployment aplikasi ke server produksi",
+                    "Mendukung dan memelihara modul utama POS",
+                    "Membantu penerapan autentikasi dan Role-Based Access Control (RBAC)"
+                ]
+            },
+            "attendanceSystem": {
+                "title": "Sistem Manajemen Absensi Berbasis Web",
+                "type": "Aplikasi Web",
+                "domain": "Manajemen Acara / Manajemen Absensi",
+                "architecture": "Monolith",
+                "team": "Solo",
+                "role": "Freelance Fullstack Developer",
+                "images": [
+                    {"src": "/portfolios/attendance1.png"},
+                    {"src": "/portfolios/attendance2.png"},
+                    {"src": "/portfolios/attendance3.png"}
+                ],
+                "company": "Proyek Freelance",
+                "description": [
+                    "Saya mengerjakan proyek freelance berupa aplikasi absensi berbasis web yang digunakan untuk mengelola data kehadiran pada sebuah event maupun absensi harian pengguna.",
+                    "Aplikasi ini dibangun dengan arsitektur monolith dan saya melanjutkan pengembangan dari kode yang telah ada sebelumnya. Tanggung jawab saya meliputi perbaikan bug, penambahan fitur sesuai kebutuhan klien, serta memastikan aplikasi berjalan stabil dan dapat digunakan secara konsisten."
+                ],
+                "technologies": "Laravel, PHP, Bootstrap, jQuery",
+                "database": "MySQL",
+                "contributions": [
+                    "Melanjutkan dan memelihara kode aplikasi yang sudah ada",
+                    "Memperbaiki bug dan meningkatkan stabilitas sistem",
+                    "Mengembangkan fitur absensi berbasis event dan absensi harian",
+                    "Mengimplementasikan modul manajemen event, pengguna, dan jabatan",
+                    "Mendukung fitur autentikasi dan pelaporan"
+                ]
+            },
+            "electionRecap": {
+                "title": "Sistem Rekapitulasi dan Monitoring Suara",
+                "type": "Aplikasi Web Monitoring Internal",
+                "domain": "Pemilu / Monitoring Data",
+                "role": "Freelance Fullstack Developer",
+                "team": "Solo",
+                "architecture": "Monolitik",
+                "images": [
+                    {"src": "/portfolios/election1.png"},
+                    {"src": "/portfolios/election2.png"}
+                ],
+                "company": "Proyek Freelance",
+                "description": [
+                    "Saya mengerjakan proyek freelance berupa aplikasi web untuk rekapitulasi dan pemantauan hasil pemilu secara internal selama proses pemilihan nasional.",
+                    "Aplikasi ini digunakan oleh saksi lapangan yang berwenang untuk melakukan input dan memantau data suara secara hampir real-time. Tanggung jawab saya meliputi pengembangan fitur utama seperti input data suara, pelaporan hasil, serta integrasi sistem dengan fokus pada akurasi data, pengaturan hak akses, dan keandalan sistem."
+                ],
+                "technologies": "PHP, Laravel, jQuery, Bootstrap",
+                "database": "MySQL",
+                "contributions": [
+                    "Mengembangkan modul input dan rekapitulasi data suara",
+                    "Membangun dashboard statistik untuk pemantauan hasil",
+                    "Mengimplementasikan fitur pelaporan hasil pemilu internal",
+                    "Menerapkan autentikasi dan Role-Based Access Control (RBAC)",
+                    "Menjaga integritas data dan keamanan akses sistem"
+                ]
+            },
+            "strp": {
+                "title": "STRP – Sistem Manajemen Stok & Gudang",
+                "type": "Aplikasi Web Internal",
+                "domain": "Manajemen Inventaris / Gudang",
+                "architecture": "Monolitik",
+                "team": "2 Pengembang",
+                "role": "Software Engineer",
+                "images": [
+                    {"src": "/portfolios/strp1.png"},
+                    {"src": "/portfolios/strp2.png"}
+                ],
+                "company": "PT Melkhior Teknologi",
+                "description": [
+                    "Saya berkontribusi sebagai Fullstack Developer dalam mendukung pengembangan aplikasi manajemen stok dan gudang berbasis web yang digunakan untuk mengelola inventaris dan operasional pergudangan.",
+                    "Proyek ini dikembangkan bersama rekan kerja lainnya. Peran saya berfokus pada melanjutkan pengembangan kode yang sudah ada menggunakan CodeIgniter 3, memperbaiki bug, serta menambahkan fitur-fitur kecil sesuai tugas yang diberikan oleh PMO. Meskipun ruang lingkup tanggung jawab saya terbatas, saya berperan dalam menjaga stabilitas dan keberlangsungan pengembangan sistem."
+                ],
+                "technologies": "CodeIgniter 3, PHP, Bootstrap, jQuery",
+                "database": "MySQL",
+                "contributions": [
+                    "Melanjutkan dan memelihara aplikasi berbasis CodeIgniter 3",
+                    "Memperbaiki bug dan isu minor pada sistem inventaris",
+                    "Menambahkan fitur-fitur kecil sesuai arahan PMO",
+                    "Bekerja sama dengan tim dalam mendukung pengembangan aplikasi",
+                    "Membantu menjaga stabilitas dan kegunaan sistem"
+                ]
+            },
+            "documentDelivery": {
+                "title": "Sistem Manajemen Pengiriman Dokumen Kependudukan",
+                "type": "Aplikasi Web Layanan Publik",
+                "domain": "Pemerintahan / Logistik",
+                "architecture": "Monolitik",
+                "team": "Solo",
+                "role": "Freelance Fullstack Developer",
+                "images": [
+                    {"src": "/portfolios/dcodes1.png"},
+                    {"src": "/portfolios/dcodes2.png"}
+                ],
+                "company": "Proyek Freelance",
+                "description": [
+                    "Saya mengembangkan sistem berbasis web untuk memfasilitasi proses pengiriman dokumen antara penduduk dan dinas kependudukan. Aplikasi ini digunakan oleh layanan ekspedisi yang bekerja sama dengan dinas kependudukan dalam mendistribusikan dokumen penting seperti KTP dan Kartu Identitas Anak (KIA).",
+                    "Sistem ini memungkinkan masyarakat untuk mengajukan permintaan pengiriman dokumen secara langsung, sehingga membantu mempercepat proses administrasi dan meningkatkan efisiensi distribusi. Dalam proyek freelance ini, saya berperan sebagai Fullstack Developer dan menangani seluruh pengembangan sistem dari sisi frontend maupun backend."
+                ],
+                "technologies": "Laravel, PHP, Bootstrap, jQuery",
+                "database": "MySQL",
+                "contributions": [
+                    "Mengembangkan sistem secara end-to-end sebagai Fullstack Developer",
+                    "Mengimplementasikan fitur registrasi publik dan autentikasi pengguna",
+                    "Membangun modul manajemen konsumen dan layanan ekspedisi",
+                    "Mendukung alur pengajuan dan pengelolaan pengiriman dokumen",
+                    "Meningkatkan efisiensi dan keteraturan distribusi dokumen"
                 ]
             }
         }
