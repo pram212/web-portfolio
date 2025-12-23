@@ -30,7 +30,10 @@
                 "domain": "domain",
                 "architecture": "architecture",
                 "team": "team size",
-                "role": "my role"
+                "role": "my role",
+                "technologies": "technologies",
+                "overview": "overview",
+                "contributions": "key contributions"
             }
         },
         "buttons": {
@@ -201,9 +204,9 @@
                 "team": "Multi Developer",
                 "role": "Fullstack Developer",
                 "images": [
+                    {"src": "/portfolios/dbss3.png"},
                     {"src": "/portfolios/dbss1.png"},
                     {"src": "/portfolios/dbss2.png"},
-                    {"src": "/portfolios/dbss3.png"},
                     {"src": "/portfolios/dbss4.png"}
                 ],
                 "company": "PT Melkhior Teknologi",

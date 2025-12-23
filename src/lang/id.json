@@ -30,7 +30,10 @@
                 "domain": "domain",
                 "architecture": "arsitektur",
                 "team": "ukuran tim",
-                "role": "peran saya"
+                "role": "peran saya",
+                "technologies": "teknologi",
+                "overview": "gambaran umum",
+                "contributions": "kontribusi saya"
             }
         },
         "buttons": {
@@ -201,9 +204,9 @@
                 "team": "Multi Pengembang",
                 "role": "Fullstack Developer",
                 "images": [
+                    {"src": "/portfolios/dbss3.png"},
                     {"src": "/portfolios/dbss1.png"},
                     {"src": "/portfolios/dbss2.png"},
-                    {"src": "/portfolios/dbss3.png"},
                     {"src": "/portfolios/dbss4.png"}
                 ],
                 "company": "PT Melkhior Teknologi",
