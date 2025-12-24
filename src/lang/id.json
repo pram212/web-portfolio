@@ -216,7 +216,7 @@
                     "Saya berkontribusi dalam pengembangan dan pemeliharaan Sistem Dukungan Perbankan Digital (Internal ERP) yang digunakan untuk mendukung operasional internal bank. Dalam proyek ini, saya ditunjuk untuk menangani beberapa bagian sistem, khususnya pada aspek keamanan aplikasi dan optimasi performa.",
                     "Selama keterlibatan saya, saya berhasil meningkatkan tingkat keamanan aplikasi dengan mengurangi temuan kerentanan hasil pengujian penetrasi (pentest), di mana temuan berisiko tinggi (high severity) berhasil diturunkan hingga 0%, serta temuan risiko menengah (medium severity) juga mengalami penurunan. Selain itu, saya melakukan optimasi performa aplikasi dengan memperbaiki logika kode dan mengoptimalkan query database, sehingga proses pemuatan data menjadi lebih cepat dan stabil."
                 ],
-                "technologies": "PHP, JavaScript, jQuery, Bootstrap, CSS",
+                "technologies": "PHP, JavaScript, jQuery, Bootstrap, CSS, MySQL, Git, Bitbucket",
                 "database": "MySQL",
                 "contributions": [
                     "Menangani perbaikan kerentanan keamanan berdasarkan hasil penetration testing",
@@ -241,7 +241,7 @@
                     "Saya berkontribusi dalam pengembangan aplikasi internal berbasis web untuk mengelola data akuntansi dan keuangan pada perusahaan asuransi. Aplikasi ini dikembangkan sebagai bagian dari migrasi sistem dari basis desktop ke aplikasi web terpusat dengan arsitektur monolith.",
                     "Proyek ini dikerjakan oleh tim kecil yang terdiri dari dua orang developer. Tanggung jawab saya meliputi pengembangan aplikasi secara langsung (hands-on coding) serta berkoordinasi dengan klien untuk menggali kebutuhan fitur dan menerjemahkannya ke dalam sistem. Aplikasi ini membantu meningkatkan efisiensi operasional dan konsistensi dalam pengelolaan data keuangan dan akuntansi."
                 ],
-                "technologies": "Laravel, PHP, Bootstrap, jQuery",
+                "technologies": "Laravel, PHP, Bootstrap, jQuery, MySQL, Javascript, HTML, CSS, Git, Gitlab",
                 "database": "MySQL",
                 "contributions": [
                     "Mengembangkan dan memelihara modul utama akuntansi dan manajemen keuangan",
@@ -266,7 +266,7 @@
                     "Saya berkontribusi dalam pengembangan ulang aplikasi internal berbasis web yang digunakan oleh perusahaan asuransi syariah. Proyek ini bertujuan untuk meningkatkan performa dan kemudahan pemeliharaan aplikasi monolith yang telah ada sebelumnya.",
                     "Aplikasi ini dikembangkan sebagai bagian dari proses migrasi teknologi dari PHP Native ke framework Laravel. Saya bekerja dalam tim kecil yang terdiri dari dua orang developer, dengan tanggung jawab utama pada pengembangan aplikasi (hands-on coding) serta berkoordinasi langsung dengan klien untuk menggali dan menerjemahkan kebutuhan fitur ke dalam sistem."
                 ],
-                "technologies": "Laravel, PHP, Vue.js",
+                "technologies": "Laravel, PHP, Vue.js, MySQL, Tailwind CSS, JavaScript, HTML, CSS, Git, Gitlab",
                 "database": "MySQL",
                 "contributions": [
                     "Melakukan migrasi aplikasi legacy dari PHP Native ke Laravel",
@@ -293,7 +293,7 @@
                     "Saya berkontribusi sebagai Fullstack Developer dalam mendukung pengembangan dan pemeliharaan aplikasi Point of Sales (POS) berbasis web yang digunakan oleh toko emas untuk mengelola operasional bisnis harian.",
                     "Aplikasi ini dikembangkan menggunakan arsitektur monolith dengan Laravel 6. Tanggung jawab saya berfokus pada penambahan fitur, perbaikan bug, serta proses deployment aplikasi ke server produksi. Meskipun proyek ini tidak menjadi fokus utama pengembangan saya, peran saya penting dalam menjaga stabilitas dan kelancaran operasional sistem."
                 ],
-                "technologies": "PHP, Laravel, Bootstrap, jQuery",
+                "technologies": "PHP, Laravel, Bootstrap, jQuery, MySQL, JavaScript, HTML, CSS, Git, Gitlab",
                 "database": "MySQL",
                 "contributions": [
                     "Menambahkan dan menyempurnakan fitur sesuai kebutuhan bisnis",
@@ -320,7 +320,7 @@
                     "Saya mengerjakan proyek freelance berupa aplikasi absensi berbasis web yang digunakan untuk mengelola data kehadiran pada sebuah event maupun absensi harian pengguna.",
                     "Aplikasi ini dibangun dengan arsitektur monolith dan saya melanjutkan pengembangan dari kode yang telah ada sebelumnya. Tanggung jawab saya meliputi perbaikan bug, penambahan fitur sesuai kebutuhan klien, serta memastikan aplikasi berjalan stabil dan dapat digunakan secara konsisten."
                 ],
-                "technologies": "Laravel, PHP, Bootstrap, jQuery",
+                "technologies": "Laravel, PHP, Bootstrap, jQuery, MySQL, JavaScript, HTML, CSS, Git, Gitlab",
                 "database": "MySQL",
                 "contributions": [
                     "Melanjutkan dan memelihara kode aplikasi yang sudah ada",
@@ -346,7 +346,7 @@
                     "Saya mengerjakan proyek freelance berupa aplikasi web untuk rekapitulasi dan pemantauan hasil pemilu secara internal selama proses pemilihan nasional.",
                     "Aplikasi ini digunakan oleh saksi lapangan yang berwenang untuk melakukan input dan memantau data suara secara hampir real-time. Tanggung jawab saya meliputi pengembangan fitur utama seperti input data suara, pelaporan hasil, serta integrasi sistem dengan fokus pada akurasi data, pengaturan hak akses, dan keandalan sistem."
                 ],
-                "technologies": "PHP, Laravel, jQuery, Bootstrap",
+                "technologies": "PHP, Laravel, jQuery, Bootstrap, MySQL, JavaScript, Git, Nginx, Linux(Ubuntu), HTML, CSS",
                 "database": "MySQL",
                 "contributions": [
                     "Mengembangkan modul input dan rekapitulasi data suara",
@@ -372,7 +372,7 @@
                     "Saya berkontribusi sebagai Fullstack Developer dalam mendukung pengembangan aplikasi manajemen stok dan gudang berbasis web yang digunakan untuk mengelola inventaris dan operasional pergudangan.",
                     "Proyek ini dikembangkan bersama rekan kerja lainnya. Peran saya berfokus pada melanjutkan pengembangan kode yang sudah ada menggunakan CodeIgniter 3, memperbaiki bug, serta menambahkan fitur-fitur kecil sesuai tugas yang diberikan oleh PMO. Meskipun ruang lingkup tanggung jawab saya terbatas, saya berperan dalam menjaga stabilitas dan keberlangsungan pengembangan sistem."
                 ],
-                "technologies": "CodeIgniter 3, PHP, Bootstrap, jQuery",
+                "technologies": "CodeIgniter 3, PHP, Bootstrap, jQuery, Nginx, MySQL",
                 "database": "MySQL",
                 "contributions": [
                     "Melanjutkan dan memelihara aplikasi berbasis CodeIgniter 3",
@@ -398,7 +398,7 @@
                     "Saya mengembangkan sistem berbasis web untuk memfasilitasi proses pengiriman dokumen antara penduduk dan dinas kependudukan. Aplikasi ini digunakan oleh layanan ekspedisi yang bekerja sama dengan dinas kependudukan dalam mendistribusikan dokumen penting seperti KTP dan Kartu Identitas Anak (KIA).",
                     "Sistem ini memungkinkan masyarakat untuk mengajukan permintaan pengiriman dokumen secara langsung, sehingga membantu mempercepat proses administrasi dan meningkatkan efisiensi distribusi. Dalam proyek freelance ini, saya berperan sebagai Fullstack Developer dan menangani seluruh pengembangan sistem dari sisi frontend maupun backend."
                 ],
-                "technologies": "Laravel, PHP, Bootstrap, jQuery",
+                "technologies": "Laravel, PHP, Bootstrap, jQuery, MySQL",
                 "database": "MySQL",
                 "contributions": [
                     "Mengembangkan sistem secara end-to-end sebagai Fullstack Developer",

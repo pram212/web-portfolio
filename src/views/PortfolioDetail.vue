@@ -52,33 +52,36 @@ const prevUrl = computed(() => {
 
       <div class="mt-4">
         <table>
-          <tr>
-            <td class="capitalize font-semibold text-error">{{ $t('elements.work_page.work_detail.type') }} </td>
-            <td class="text-gray-700 dark:text-white">: {{ project.type }}</td>
-          </tr>
-          <tr>
-            <td class="capitalize font-semibold text-error">{{ $t('elements.work_page.work_detail.domain') }} </td>
-            <td class="text-gray-700 dark:text-white">: {{ project.domain }}</td>
-          </tr>
-          <tr>
-            <td class="capitalize font-semibold text-error">{{ $t('elements.work_page.work_detail.architecture') }}
-            </td>
-            <td class="text-gray-700 dark:text-white">: {{ project.architecture }}</td>
-          </tr>
-          <tr>
-            <td class="capitalize font-semibold text-error">{{ $t('elements.work_page.work_detail.team') }} </td>
-            <td class="text-gray-700 dark:text-white">: {{ project.team }}</td>
-          </tr>
-          <tr>
-            <td class="capitalize font-semibold text-error">{{ $t('elements.work_page.work_detail.role') }} </td>
-            <td class="text-gray-700 dark:text-white">: {{ project.role }}</td>
-          </tr>
-          <tr v-if="project.demo">
-            <td class="capitalize font-semibold text-error">{{ $t('elements.work_page.work_detail.live_demo') }} </td>
-            <td>
-              <a target="_blank" :href="project.demo?.url">{{ project.demo?.url }}</a>
-            </td>
-          </tr>
+          <tbody>
+
+            <tr>
+              <td class="capitalize font-semibold text-error">{{ $t('elements.work_page.work_detail.type') }} </td>
+              <td class="text-gray-700 dark:text-white">: {{ project.type }}</td>
+            </tr>
+            <tr>
+              <td class="capitalize font-semibold text-error">{{ $t('elements.work_page.work_detail.domain') }} </td>
+              <td class="text-gray-700 dark:text-white">: {{ project.domain }}</td>
+            </tr>
+            <tr>
+              <td class="capitalize font-semibold text-error">{{ $t('elements.work_page.work_detail.architecture') }}
+              </td>
+              <td class="text-gray-700 dark:text-white">: {{ project.architecture }}</td>
+            </tr>
+            <tr>
+              <td class="capitalize font-semibold text-error">{{ $t('elements.work_page.work_detail.team') }} </td>
+              <td class="text-gray-700 dark:text-white">: {{ project.team }}</td>
+            </tr>
+            <tr>
+              <td class="capitalize font-semibold text-error">{{ $t('elements.work_page.work_detail.role') }} </td>
+              <td class="text-gray-700 dark:text-white">: {{ project.role }}</td>
+            </tr>
+            <tr v-if="project.demo">
+              <td class="capitalize font-semibold text-error">{{ $t('elements.work_page.work_detail.live_demo') }} </td>
+              <td>
+                <a target="_blank" :href="project.demo?.url">{{ project.demo?.url }}</a>
+              </td>
+            </tr>
+          </tbody>
         </table>
       </div>
 

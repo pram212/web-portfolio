@@ -216,7 +216,7 @@
                     "I contributed to the development and maintenance of an internal Digital Banking Support System (ERP) used to support internal banking operations. I was assigned to handle specific parts of the system, with a primary focus on application security improvements and performance optimization.",
                     "During my involvement, I successfully improved the application's security posture by addressing vulnerabilities identified through penetration testing. High-severity findings were reduced to 0%, while medium-severity vulnerabilities were also significantly reduced. Additionally, I enhanced application performance by optimizing backend logic and database queries, resulting in faster and more stable data loading."
                 ],
-                "technologies": "PHP, JavaScript, jQuery, Bootstrap, CSS",
+                "technologies": "PHP, JavaScript, jQuery, Bootstrap, CSS, MySQL, Git, Bitbucket",
                 "database": "MySQL",
                 "contributions": [
                     "Resolved security vulnerabilities based on penetration testing results",
@@ -241,7 +241,7 @@
                     "I contributed to the development of an internal web-based accounting and financial management system for an insurance company. The application was developed as part of a migration from a desktop-based system to a centralized web-based monolithic architecture.",
                     "The project was handled by a small team of two developers. My responsibilities included hands-on development as well as coordinating directly with the client to gather requirements and translate business needs into system features. The system helped improve operational efficiency and consistency in managing accounting and financial data."
                 ],
-                "technologies": "Laravel, PHP, Bootstrap, jQuery",
+                "technologies": "Laravel, PHP, Bootstrap, jQuery, MySQL, Javascript, HTML, CSS, Git, Gitlab",
                 "database": "MySQL",
                 "contributions": [
                     "Developed and maintained core modules for accounting and financial management",
@@ -266,7 +266,7 @@
                     "I contributed to the redevelopment of an internal web-based management system used by a Sharia insurance company. The project was initiated to improve the performance and maintainability of an existing monolithic application.",
                     "The application was part of a technology migration from native PHP to the Laravel framework. I worked in a small team of two developers, focusing on application development and coordinating directly with stakeholders to gather feature requirements. The new system delivered improved performance, cleaner architecture, and better scalability for internal insurance operations."
                 ],
-                "technologies": "Laravel, PHP, Vue.js",
+                "technologies": "Laravel, PHP, Vue.js, MySQL, Tailwind CSS, JavaScript, HTML, CSS, Git, Gitlab",
                 "database": "MySQL",
                 "contributions": [
                     "Migrated legacy native PHP application to Laravel framework",
@@ -293,7 +293,7 @@
                     "I contributed as a Fullstack Developer supporting the development and maintenance of a web-based Point of Sale (POS) system used by a jewelry store to manage daily business operations.",
                     "The application was built using a monolithic architecture with Laravel 6. My responsibilities focused on feature enhancements, bug fixes, and deployment to the production server. Although this project was not my primary development focus, I played a key role in ensuring system stability, reliability, and smooth operation."
                 ],
-                "technologies": "PHP, Laravel, Bootstrap, jQuery",
+                "technologies": "PHP, Laravel, Bootstrap, jQuery, MySQL, JavaScript, HTML, CSS, Git, Gitlab",
                 "database": "MySQL",
                 "contributions": [
                     "Implemented feature enhancements based on business needs",
@@ -320,7 +320,7 @@
                     "I worked as a freelance developer on a web-based attendance management system designed to manage attendance data for events as well as daily user check-ins.",
                     "The application was built using a monolithic architecture, and I was responsible for continuing the development of an existing codebase. My role focused on fixing bugs, adding new features based on client requirements, and ensuring the system remained stable and reliable for daily use."
                 ],
-                "technologies": "Laravel, PHP, Bootstrap, jQuery",
+                "technologies": "Laravel, PHP, Bootstrap, jQuery, MySQL, JavaScript, HTML, CSS, Git, Gitlab",
                 "database": "MySQL",
                 "contributions": [
                     "Maintained and enhanced an existing Laravel codebase",
@@ -346,7 +346,7 @@
                     "I worked as a freelance developer on a web-based vote recap and monitoring system designed for internal election result tracking during a national election process.",
                     "The application was used by authorized field witnesses to submit and monitor vote data in near real-time. My responsibilities included developing core features such as vote data input, result reporting, and system integration, with a strong focus on data accuracy, access control, and system reliability."
                 ],
-                "technologies": "PHP, Laravel, jQuery, Bootstrap",
+                "technologies": "PHP, Laravel, jQuery, Bootstrap, MySQL, JavaScript, Git, Nginx, Linux(Ubuntu), HTML, CSS",
                 "database": "MySQL",
                 "contributions": [
                     "Developed vote data input and recap modules",
@@ -372,7 +372,7 @@
                     "I contributed as a Fullstack Developer supporting the development of a web-based stock and warehouse management system used to manage inventory and warehouse operations.",
                     "The project was developed collaboratively with another developer. My role focused on continuing an existing CodeIgniter 3 codebase, fixing bugs, and implementing small feature enhancements based on tasks assigned by the PMO. Although my responsibilities were limited in scope, I contributed to maintaining system stability and supporting ongoing development."
                 ],
-                "technologies": "CodeIgniter 3, PHP, Bootstrap, jQuery",
+                "technologies": "CodeIgniter 3, PHP, Bootstrap, jQuery, Nginx, MySQL",
                 "database": "MySQL",
                 "contributions": [
                     "Maintained and supported an existing CodeIgniter 3 application",
@@ -398,7 +398,7 @@
                     "I developed a web-based system designed to facilitate document delivery between citizens and a local civil registry office. The application was built to support courier services responsible for delivering official documents such as national ID cards and child identity cards.",
                     "The system allows citizens to submit document delivery requests directly through the platform, helping streamline administrative processes and improve delivery efficiency. As a freelance Fullstack Developer, I handled the entire system development end-to-end, covering both frontend and backend implementation."
                 ],
-                "technologies": "Laravel, PHP, Bootstrap, jQuery",
+                "technologies": "Laravel, PHP, Bootstrap, jQuery, MySQL",
                 "database": "MySQL",
                 "contributions": [
                     "Designed and developed the system end-to-end as a Fullstack Developer",
