@@ -1,0 +1,17 @@
+version: 2
+
+updates:
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+
+    # Biar gak kebanyakan PR
+    open-pull-requests-limit: 5
+
+    # Label biar rapi di GitHub
+    labels:
+      - "dependencies"
+
+    # Auto rebase kalau ada conflict
+    rebase-strategy: "auto"
